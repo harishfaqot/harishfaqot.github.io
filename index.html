@@ -605,7 +605,7 @@
                         </div>
                     </div>
     
-                    <form id="" class="contact__form grid">
+                    <form id="testform" name="testform" class="contact__form grid" action="https://formsubmit.co/2e55e98a5566e79cd179f5b3abb4073b" method="POST">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="" class="contact__label">Name</label>
@@ -623,7 +623,7 @@
                         </div>
     
                         <div>
-                            <a href="#contact" class="button button--flex">
+                            <a href="#contact" onclick="javascript:if(document.testform.reportValidity()){document.testform.submit();}return false;" class="button button--flex">
                                 Send Message
                                 <i class="uil uil-message button__icon"></i>
                             </a>
