@@ -6,6 +6,7 @@
 
         <!--==================== UNICONS ====================-->
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
          
         <!--==================== SWIPER CSS ====================-->
         <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
@@ -607,7 +608,7 @@
     
                     <form id="testform" name="testform" class="contact__form grid" action="https://formsubmit.co/2e55e98a5566e79cd179f5b3abb4073b" method="POST">
                         <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="https://harishfaqot.github.io">
+                        <input type="hidden" name="_next" value="false">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="" class="contact__label">Name</label>
@@ -625,7 +626,7 @@
                         </div>
     
                         <div>
-                            <a href="#contact" onclick="javascript:if(document.testform.reportValidity()){document.testform.submit();} return false;" class="button button--flex">
+                            <a href="#contact" class="button button--flex" onclick="if(document.testform.reportValidity()){document.testform.submit();swal('Our First Alert', 'With some body text!', 'success');} return false;">
                                 Send Message
                                 <i class="uil uil-message button__icon"></i>
                             </a>
@@ -684,6 +685,7 @@
 
         <!--==================== SWIPER JS ====================-->
         <script src="assets/js/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
 
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
