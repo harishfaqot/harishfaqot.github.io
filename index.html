@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <title>Muhammad Harish - Electrical & Robotics Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -63,18 +64,20 @@
         <div class="container mx-auto px-6 py-16 text-center">
             <div class="flex justify-center mb-8 relative">
                 <div class="w-40 h-40 rounded-full border-4 border-white overflow-hidden relative">
-                    <img src="profile.png" alt="Muhammad Harish">
+                    <img src="images/profile.png" alt="Muhammad Harish">
                 </div>
             </div>
             <h1 class="text-4xl font-bold mb-2">Muhammad Harish</h1>
             <p class="text-xl mb-4">Electrical Engineering & Robotics Engineer</p>
             <p class="max-w-2xl mx-auto mb-8">Award-winning engineer passionate about robotics, autonomous systems, and industrial automation with multiple national competition victories.</p>
-            <div class="flex justify-center space-x-4">
-                <a href="mailto:harish.faqot02@gmail.com?subject=I%20saw%20your%20portfolio&body=Hello%2C%20I%20found%20your%20website%20and%20would%20like%20to%20get%20in%20touch." 
-                    class="bg-white text-blue-700 px-6 py-2 rounded-full font-medium hover:bg-blue-100 transition">
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="mailto:harish.faqot02@gmail.com?subject=I%20saw%20your%20portfolio&body=Hello%2C%20I%20found%20your%20website%20and%20would%20like%20to%20get%20in%20touch."
+                    class="inline-flex items-center whitespace-nowrap bg-white text-blue-700 px-6 py-2 rounded-full font-medium hover:bg-blue-100 transition">
                     <i class="fas fa-envelope mr-2"></i> Send Email
                 </a>
-                <a href="CV_Muhammad Harish_ATS.pdf" target="_blank" download class="border-2 border-white text-white px-6 py-2 rounded-full font-medium hover:bg-white hover:text-blue-700 transition">
+
+                <a href="CV_Muhammad Harish_ATS.pdf" target="_blank" download
+                    class="inline-flex items-center whitespace-nowrap border-2 border-white text-white px-6 py-2 rounded-full font-medium hover:bg-white hover:text-blue-700 transition">
                     <i class="fas fa-download mr-2"></i> Download CV
                 </a>
             </div>
@@ -145,7 +148,7 @@
 
         <!-- Experience Section -->
         <section class="mb-16">
-            <h2 class="text-3xl font-bold mb-8 text-center">Professional Experience</h2>
+            <h2 class="text-3xl font-bold mb-8 text-center">Company Experience</h2>
             <div class="bg-white rounded-xl shadow-lg overflow-hidden">
                 <div class="md:flex">
                     <div class="md:w-1/3 bg-blue-800 text-white p-8">
@@ -154,7 +157,7 @@
                         <div class="space-y-2">
                             <div class="flex items-center">
                                 <div class="w-3 h-3 rounded-full bg-blue-200 mr-2"></div>
-                                <span>PT Inti Utama Solusindo (Current)</span>
+                                <span>PT Inti Utama Solusindo (Present)</span>
                             </div>
                             <div class="flex items-center">
                                 <div class="w-3 h-3 rounded-full bg-blue-200 mr-2"></div>
@@ -231,7 +234,7 @@
                 <!-- Award 2 -->
                 <div class="award-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 relative">
                     <div class="h-48 overflow-hidden">
-                        <img src="images/kri.jpg" alt="IPR Awards" class="w-full h-full object-cover award-image">
+                        <img src="images/kri.jpg" alt="KRI Awards" class="w-full h-full object-cover award-image">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">Kontes Robot Indonesia (KRI) 2024</h3>
@@ -241,7 +244,7 @@
                             <span class="bg-gray-100 px-2 py-1 text-xs rounded">Innovation</span>
                             <span class="bg-gray-100 px-2 py-1 text-xs rounded">Technology</span>
                         </div>
-                        <button onclick="openAwardModal('ipr')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                        <button onclick="openAwardModal('kri')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
                             View Details
                         </button>
                     </div>
@@ -250,7 +253,7 @@
                 <!-- Award 3 -->
                 <div class="award-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 relative">
                     <div class="h-48 overflow-hidden">
-                        <img src="images/krti.jpg" alt="IPR Awards" class="w-full h-full object-cover award-image">
+                        <img src="images/krti.jpg" alt="KRTI Awards" class="w-full h-full object-cover award-image">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">Kontes Robot Terbang (KRTI) 2024</h3>
@@ -260,7 +263,7 @@
                             <span class="bg-gray-100 px-2 py-1 text-xs rounded">Innovation</span>
                             <span class="bg-gray-100 px-2 py-1 text-xs rounded">Technology</span>
                         </div>
-                        <button onclick="openAwardModal('ipr')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                        <button onclick="openAwardModal('krti')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
                             View Details
                         </button>
                     </div>
@@ -288,7 +291,7 @@
                 <!-- Award 5 -->
                 <div class="award-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 relative">
                     <div class="h-48 overflow-hidden">
-                        <img src="images/pimnas.jpg" alt="IPR Awards" class="w-full h-full object-cover award-image">
+                        <img src="images/pimnas.jpg" alt="PIMNAS Awards" class="w-full h-full object-cover award-image">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">Program Kreativitas Mahasiswa</h3>
@@ -298,7 +301,7 @@
                             <span class="bg-gray-100 px-2 py-1 text-xs rounded">Innovation</span>
                             <span class="bg-gray-100 px-2 py-1 text-xs rounded">Technology</span>
                         </div>
-                        <button onclick="openAwardModal('ipr')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                        <button onclick="openAwardModal('pkm')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
                             View Details
                         </button>
                     </div>
@@ -307,7 +310,7 @@
                 <!-- Award 6 -->
                 <div class="award-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 relative">
                     <div class="h-48 overflow-hidden">
-                        <img src="images/baronas-2.jpg" alt="IPR Awards" class="w-full h-full object-cover award-image">
+                        <img src="images/baronas-2.jpg" alt="Baronas Awards" class="w-full h-full object-cover award-image">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">1st Winner BARONAS</h3>
@@ -317,7 +320,7 @@
                             <span class="bg-gray-100 px-2 py-1 text-xs rounded">Innovation</span>
                             <span class="bg-gray-100 px-2 py-1 text-xs rounded">Technology</span>
                         </div>
-                        <button onclick="openAwardModal('ipr')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                        <button onclick="openAwardModal('baronas')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
                             View Details
                         </button>
                     </div>
@@ -326,7 +329,7 @@
                 <!-- Award 7 -->
                 <div class="award-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 relative">
                     <div class="h-48 overflow-hidden">
-                        <img src="images/HKI.jpg" alt="IPR Awards" class="w-full h-full object-cover award-image">
+                        <img src="images/HKI.jpg" alt="HKI Awards" class="w-full h-full object-cover award-image">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">5 Intellectual Property Rights</h3>
@@ -345,7 +348,7 @@
                 <!-- Award 8 -->
                 <div class="award-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 relative">
                     <div class="h-48 overflow-hidden">
-                        <img src="images/unnes-2.jpg" alt="IPR Awards" class="w-full h-full object-cover award-image">
+                        <img src="images/unnes-2.jpg" alt="LKTIM Awards" class="w-full h-full object-cover award-image">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">1st Winner LKTIM UNNES 2022</h3>
@@ -355,7 +358,7 @@
                             <span class="bg-gray-100 px-2 py-1 text-xs rounded">Innovation</span>
                             <span class="bg-gray-100 px-2 py-1 text-xs rounded">Technology</span>
                         </div>
-                        <button onclick="openAwardModal('ipr')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                        <button onclick="openAwardModal('lktim')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
                             View Details
                         </button>
                     </div>
@@ -364,7 +367,7 @@
                 <!-- Award 9 -->
                 <div class="award-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 relative">
                     <div class="h-48 overflow-hidden">
-                        <img src="images/showcase.jpg" alt="IPR Awards" class="w-full h-full object-cover award-image">
+                        <img src="images/showcase.jpg" alt="Exhibition Awards" class="w-full h-full object-cover award-image">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">Robotics Exhibition</h3>
@@ -374,7 +377,7 @@
                             <span class="bg-gray-100 px-2 py-1 text-xs rounded">Innovation</span>
                             <span class="bg-gray-100 px-2 py-1 text-xs rounded">Technology</span>
                         </div>
-                        <button onclick="openAwardModal('ipr')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                        <button onclick="openAwardModal('exhibition')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
                             View Details
                         </button>
                     </div>
@@ -576,35 +579,9 @@
             </div>
         </section>
 
-        <!-- Gallery Section -->
         <section class="mb-16">
             <h2 class="text-3xl font-bold mb-8 text-center">Project Gallery</h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80" alt="Project 1" class="w-full h-48 object-cover">
-                </div>
-                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="Project 2" class="w-full h-48 object-cover">
-                </div>
-                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Project 3" class="w-full h-48 object-cover">
-                </div>
-                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Project 4" class="w-full h-48 object-cover">
-                </div>
-                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="Project 5" class="w-full h-48 object-cover">
-                </div>
-                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Project 6" class="w-full h-48 object-cover">
-                </div>
-                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Project 7" class="w-full h-48 object-cover">
-                </div>
-                <div class="gallery-item overflow-hidden rounded-lg shadow-md">
-                    <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Project 8" class="w-full h-48 object-cover">
-                </div>
-            </div>
+            <div id="gallery" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"></div>
         </section>
 
         <!-- Contact Section -->
@@ -823,12 +800,73 @@
 
         // Award data
         const awards = {
+            outstanding: {
+                title: "Most Outstanding Student - Universitas Pertamina",
+                images: [
+                    "images/mapres-3.jpg",
+                    "images/mapres-4.png",
+                    "images/mapres.jpg"
+                ],
+                description: "Selected as The Most Outstanding Student from a pool of candidates representing 15 faculties across Universitas Pertamina.",
+                details: [
+                    "Recognized for exceptional academic performance (GPA 3.95/4.00)",
+                    "Acknowledged for leadership in student organizations",
+                    "Recognized for research contributions and competition achievements",
+                    "Received university-wide recognition and award",
+                    "Represented university at national events"
+                ],
+                date: "February 2024",
+                organization: "Universitas Pertamina",
+                project: "Multiple projects including Roadsense, IRIS, and EMA"
+            },
+            kri: {
+                title: "Kontes Robot Indonesia",
+                images: [
+                    "images/kri.jpg",
+                    "images/bumblebee (2).jpg",
+                    "images/bumblebee (3).jpg"
+                ],
+                description: "Bumblebee: Hexapod Robot for Disaster Search and Rescue with Obstacle Navigation and Victim Detection Using Machine Learning.",
+                details: [
+                    "Achieved 2nd place as Regional Winner and advanced as National Finalist in the KRSRI (Kontes Robot SAR Indonesia) Division at KRI 2024.",
+                    "Designed for disaster search and rescue missions, capable of navigating post-disaster environments to rescue victims.",
+                    "Equipped with NVIDIA Jetson and sensors: camera, ultrasonic, gyroscope, and compass to detect obstacles and determine paths.",
+                    "Utilizes machine learning to identify victims among debris.",
+                    "Hexapod design (six legs) offers high stability and adaptability on uneven terrain.",
+                    "Implements inverse kinematics and gait algorithms for spider-like walking behavior.",
+                    "Demonstrates innovation in autonomous systems, robotics, and teamwork."
+                ],
+                date: "Dec 2022 – Jul 2024",
+                organization: "Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi",
+                project: "Bumblebee – KRSRI Division"
+            },
+            krti: {
+                title: "Kontes Robot Terbang Indonesia",
+                images: [
+                    "images/skyrone.jpg",
+                    "images/skyrone (4).jpg",
+                    "images/skyrone (2).jpg"
+                ],
+                description: "Skyrone: Autonomous VTOL Robot for Search and Rescue Missions with Advanced Navigation and Vision Capabilities.",
+                details: [
+                    "Achieved 1st place as Regional Winner and advanced as National Finalist in the VTOL Division at KRTI 2024.",
+                    "Skyrone is a VTOL (Vertical Take-Off and Landing) robot developed for aerial search and rescue operations.",
+                    "Features include autonomous flight, obstacle avoidance, and computer vision for target detection.",
+                    "Built using ROS (Robot Operating System) for modular and scalable development.",
+                    "Equipped with indoor navigation capability and Object Detection using SSD MobileNet and YOLOv5.",
+                    "Can fly up to 15 minutes per mission, balancing endurance and agility.",
+                    "Demonstrates strong proficiency in drone technology, autonomy, and robotics systems engineering."
+                ],
+                date: "Feb 2023 – Sep 2024",
+                organization: "Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi",
+                project: "Skyrone – VTOL Division"
+            },
             gemastik: {
                 title: "1st Winner - GEMASTIK 2023",
                 images: [
-                    "https://images.unsplash.com/photo-1606326608606-aa0b629d0d14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-                    "https://images.unsplash.com/photo-1606326608606-aa0b629d0d14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-                    "https://images.unsplash.com/photo-1606326608606-aa0b629d0d14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                    "images/roadsense-3.jpg",
+                    "images/roadsense-5.jpg",
+                    "images/roadsense-6.jpg",
                 ],
                 description: "Won 1st place at GEMASTIK 2023, the most prestigious IT competition for college students in Indonesia held by The Ministry of Education, Culture, Research, and Technology.",
                 details: [
@@ -842,12 +880,31 @@
                 organization: "Kemendikbudristek",
                 project: "Roadsense: Pemetaan berbasis deep learning sebagai pendeteksi dan analisis kerusakan jalan secara real time"
             },
-            outstanding: {
-                title: "Most Outstanding Student - Universitas Pertamina",
+            pkm: {
+                title: "Program Kreativitas Mahasiswa",
                 images: [
-                    "https://images.unsplash.com/photo-1606326608606-aa0b629d0d14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-                    "https://images.unsplash.com/photo-1606326608606-aa0b629d0d14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-                    "https://images.unsplash.com/photo-1606326608606-aa0b629d0d14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                    "images/mapres-3.jpg",
+                    "images/mapres-4.png",
+                    "images/mapres.jpg"
+                ],
+                description: "Selected as The Most Outstanding Student from a pool of candidates representing 15 faculties across Universitas Pertamina.",
+                details: [
+                    "Recognized for exceptional academic performance (GPA 3.95/4.00)",
+                    "Acknowledged for leadership in student organizations",
+                    "Recognized for research contributions and competition achievements",
+                    "Received university-wide recognition and award",
+                    "Represented university at national events"
+                ],
+                date: "February 2024",
+                organization: "Universitas Pertamina",
+                project: "Multiple projects including Roadsense, IRIS, and EMA"
+            },
+            baronas: {
+                title: "1st Winner Baronas",
+                images: [
+                    "images/mapres-3.jpg",
+                    "images/mapres-4.png",
+                    "images/mapres.jpg"
                 ],
                 description: "Selected as The Most Outstanding Student from a pool of candidates representing 15 faculties across Universitas Pertamina.",
                 details: [
@@ -862,7 +919,7 @@
                 project: "Multiple projects including Roadsense, IRIS, and EMA"
             },
             ipr: {
-                title: "5 Intellectual Property Rights (IPR)",
+                title: "5 Intellectual Property Rights",
                 images: [
                     "https://images.unsplash.com/photo-1606326608606-aa0b629d0d14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
                     "https://images.unsplash.com/photo-1606326608606-aa0b629d0d14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
@@ -881,7 +938,49 @@
                 date: "2022-2024",
                 organization: "Kemenkumham",
                 project: "Multiple innovative projects"
-            }
+            },
+            lktim: {
+                title: "1st Winner LKTIM UNNES 2022",
+                images: [
+                    "https://images.unsplash.com/photo-1606326608606-aa0b629d0d14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+                    "https://images.unsplash.com/photo-1606326608606-aa0b629d0d14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+                    "https://images.unsplash.com/photo-1606326608606-aa0b629d0d14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                ],
+                description: "Granted Intellectual Property Rights (IPR) by Kemenkumham for five innovative projects.",
+                details: [
+                    "Roadsense: Deep Learning for Road Damage Detection",
+                    "IRIS: IoT and Computer Vision for Shrimp Larvae Counting",
+                    "EMA: IoT-based Energy Monitoring and Analysis",
+                    "MAP-Road: Edge Computing Road Damage Mapping",
+                    "WeCan-See: Personal Assistance for Visually Impaired",
+                    "Each IPR represents significant technological innovation",
+                    "Legal protection for original creations"
+                ],
+                date: "2022-2024",
+                organization: "Kemenkumham",
+                project: "Multiple innovative projects"
+            },
+            exhibition: {
+                title: "Robotics Exhibition",
+                images: [
+                    "https://images.unsplash.com/photo-1606326608606-aa0b629d0d14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+                    "https://images.unsplash.com/photo-1606326608606-aa0b629d0d14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+                    "https://images.unsplash.com/photo-1606326608606-aa0b629d0d14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                ],
+                description: "Granted Intellectual Property Rights (IPR) by Kemenkumham for five innovative projects.",
+                details: [
+                    "Roadsense: Deep Learning for Road Damage Detection",
+                    "IRIS: IoT and Computer Vision for Shrimp Larvae Counting",
+                    "EMA: IoT-based Energy Monitoring and Analysis",
+                    "MAP-Road: Edge Computing Road Damage Mapping",
+                    "WeCan-See: Personal Assistance for Visually Impaired",
+                    "Each IPR represents significant technological innovation",
+                    "Legal protection for original creations"
+                ],
+                date: "2022-2024",
+                organization: "Kemenkumham",
+                project: "Multiple innovative projects"
+            },
         };
 
         // Modal functions
@@ -1017,6 +1116,26 @@
                 observer.observe(bar);
             });
         });
+
+        //Galery Images
+        const totalImages = 14; // total images in folder
+        const imageCount = 12;   // number of images to show
+        const imageIndexes = [...Array(totalImages).keys()].sort(() => 0.5 - Math.random()).slice(0, imageCount);
+        const gallery = document.getElementById("gallery");
+
+        imageIndexes.forEach(i => {
+            const img = document.createElement("img");
+            img.src = `images/gallery/img (${i + 1}).jpg`;
+            img.alt = `Project ${i + 1}`;
+            img.className = "w-full h-48 object-cover";
+            
+            const wrapper = document.createElement("div");
+            wrapper.className = "gallery-item overflow-hidden rounded-lg shadow-md";
+            wrapper.appendChild(img);
+
+            gallery.appendChild(wrapper);
+        });
+
     </script>
 </body>
 </html>
