@@ -455,7 +455,7 @@
         <section id="projects" class="mb-16">
             <h2 class="text-3xl font-bold mb-8 text-center">Featured Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
+                <!-- Project 1 (Visible by default) -->
                 <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300">
                     <div class="h-48 overflow-hidden">
                         <img src="images/roadsense-3.jpg" alt="Roadsense Project" class="w-full h-full object-cover">
@@ -478,7 +478,7 @@
                     </div>
                 </div>
 
-                <!-- Project 2 -->
+                <!-- Project 2 (Visible by default) -->
                 <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300">
                     <div class="h-48 overflow-hidden">
                         <img src="images/bumblebee (3).jpg" alt="Bumblebee Project" class="w-full h-full object-cover">
@@ -486,7 +486,7 @@
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-2">
                             <h3 class="text-xl font-bold">Bumblebee Robot</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">University</span>
+                            <span class="bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded-full">University</span>
                         </div>
                         <p class="text-gray-600 mb-4">Bumblebee: Hexapod Robot for Disaster Search and Rescue (KRI - KRSRI Project)</p>
                         <div class="flex flex-wrap gap-2 mb-4">
@@ -501,7 +501,7 @@
                     </div>
                 </div>
 
-                <!-- Project 3 -->
+                <!-- Project 3 (Visible by default) -->
                 <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300">
                     <div class="h-48 overflow-hidden">
                         <img src="images/skyrone.jpg" alt="Skyrone Project" class="w-full h-full object-cover">
@@ -509,7 +509,7 @@
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-2">
                             <h3 class="text-xl font-bold">Skyrone Drone</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">University</span>
+                            <span class="bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded-full">University</span>
                         </div>
                         <p class="text-gray-600 mb-4">SKYRONE: Autonomous Multirotor Robot for Search and Rescue (KRTI - VTOL Project)</p>
                         <div class="flex flex-wrap gap-2 mb-4">
@@ -524,7 +524,7 @@
                     </div>
                 </div>
 
-                <!-- Project 4 -->
+                <!-- Project 4 (Visible by default) -->
                 <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300">
                     <div class="h-48 overflow-hidden">
                         <img src="images/hydroponic.jpg" alt="Hydroponic Project" class="w-full h-full object-cover">
@@ -532,7 +532,7 @@
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-2">
                             <h3 class="text-xl font-bold">Hydroponic IoT</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">Industrial</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Industrial</span>
                         </div>
                         <p class="text-gray-600 mb-4">An IoT system to monitor hydroponic (EC), pH, temp, and hum for optimized plant growth</p>
                         <div class="flex flex-wrap gap-2 mb-4">
@@ -547,7 +547,7 @@
                     </div>
                 </div>
                 
-                <!-- Project 5 -->
+                <!-- Project 5 (Visible by default) -->
                 <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300">
                     <div class="h-48 overflow-hidden">
                         <img src="images/asrs.jpg" alt="ASRS System" class="w-full h-full object-cover">
@@ -570,7 +570,7 @@
                     </div>
                 </div>
                 
-                <!-- Project 6 -->
+                <!-- Project 6 (Visible by default) -->
                 <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300">
                     <div class="h-48 overflow-hidden">
                         <img src="images/loadcell (5).jpg" alt="Loadcell Conveyor" class="w-full h-full object-cover">
@@ -578,16 +578,81 @@
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-2">
                             <h3 class="text-xl font-bold">Loadcell Printer</h3>
-                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">IPR Granted</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Industrial</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Developed a real-time weighing and label-printing solution for conveyor systems.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Industrial</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Arduino</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Protocol Communication</span>
+                        </div>
+                        <button onclick="openModal('loadcell')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 7 (Hidden by default) -->
+                <div class="project-card hidden more-projects bg-white rounded-xl shadow-lg overflow-hidden transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/iris.jpg" alt="Loadcell Conveyor" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">IRIS Shrimp Scan</h3>
+                            <span class="bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded-full">University</span>
                         </div>
                         <p class="text-gray-600 mb-4">Integrated Shrimp Scan: IoT and Computer Vision system for shrimp larvae counting.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Raspberry</span>
                             <span class="bg-gray-100 px-2 py-1 text-xs rounded">Computer Vision</span>
                             <span class="bg-gray-100 px-2 py-1 text-xs rounded">IoT</span>
-                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Python</span>
-                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">OpenCV</span>
                         </div>
                         <button onclick="openModal('iris')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 8 (Hidden by default) -->
+                <div class="project-card hidden more-projects bg-white rounded-xl shadow-lg overflow-hidden transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/powersense.jpg" alt="Loadcell Conveyor" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Powersense</h3>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Industrial</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Remote monitoring system for transactional energy usage leveraging IoT.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Technology</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">IoT</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">ESP32</span>
+                        </div>
+                        <button onclick="openModal('powersense')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 9 (Hidden by default) -->
+                <div class="project-card hidden more-projects bg-white rounded-xl shadow-lg overflow-hidden transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/slam.jpg" alt="Loadcell Conveyor" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">LiDAR SLAM</h3>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Industrial</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Constructed 3D environments using Velodyne VLP-16 and LeGO-LOAM for real-time SLAM.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Technology</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">SLAM</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">ROS</span>
+                        </div>
+                        <button onclick="openModal('slam')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
                             View Details
                         </button>
                     </div>
@@ -595,11 +660,27 @@
             </div>
             
             <div class="text-center mt-10">
-                <a href="#" class="inline-block border-2 border-blue-600 text-blue-600 px-6 py-2 rounded-full font-medium hover:bg-blue-600 hover:text-white transition">
+                <button id="viewAllProjectsBtn" class="inline-block border-2 border-blue-600 text-blue-600 px-6 py-2 rounded-full font-medium hover:bg-blue-600 hover:text-white transition">
                     View All Projects
-                </a>
+                </button>
             </div>
         </section>
+
+        <script>
+            document.getElementById('viewAllProjectsBtn').addEventListener('click', function() {
+                // Toggle all projects with the 'more-projects' class
+                document.querySelectorAll('.more-projects').forEach(project => {
+                    project.classList.toggle('hidden');
+                });
+                
+                // Change button text based on current state
+                if (this.textContent.trim() === 'View All Projects') {
+                    this.textContent = 'Show Less';
+                } else {
+                    this.textContent = 'View All Projects';
+                }
+            });
+        </script>
 
         <section class="mb-16">
             <h2 class="text-3xl font-bold mb-8 text-center">Project Gallery</h2>
@@ -654,22 +735,23 @@
                     </div>
                     <div class="md:w-1/2 p-8">
                         <h3 class="text-2xl font-semibold mb-4">Send Me a Message</h3>
-                        <form class="space-y-4">
+                        <form action="https://formsubmit.co/9a96938b33b773af39702bb5b76ee248" method="POST" class="space-y-4">
+                            <input type="hidden" name="_captcha" value="false">
                             <div>
                                 <label for="name" class="block text-gray-700 mb-1">Name</label>
-                                <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <input type="text" name="name" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                             </div>
                             <div>
                                 <label for="email" class="block text-gray-700 mb-1">Email</label>
-                                <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <input type="email" name="email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                             </div>
                             <div>
                                 <label for="subject" class="block text-gray-700 mb-1">Subject</label>
-                                <input type="text" id="subject" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <input type="text" name="subject" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                             </div>
                             <div>
                                 <label for="message" class="block text-gray-700 mb-1">Message</label>
-                                <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                                <textarea name="message" rows="4" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
                             </div>
                             <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
                                 Send Message
@@ -738,22 +820,22 @@
                     <p class="text-gray-400">Electrical Engineering & Robotics Engineer</p>
                 </div>
                 <div class="flex space-x-4">
-                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-700 transition">
+                    <a href="https://www.linkedin.com/in/muhammadharish" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-700 transition">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-500 transition">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-pink-600 transition">
+                    <a href="https://instagram.com/harishfaqot" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-pink-600 transition">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition">
+                    <a href="https://www.tiktok.com/@harishfaqot" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-pink-600 transition">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://github.com/harishfaqot" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition">
                         <i class="fab fa-github"></i>
                     </a>
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-6 pt-6 text-center text-gray-400">
-                <p>&copy; 2024 Muhammad Harish. All rights reserved.</p>
+                <p>&copy; 2025 Muhammad Harish. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -857,6 +939,28 @@
                 status: "Ongoing Development",
                 award: "Industrial Implementation"
             },
+            loadcell: {
+                title: "Load Cell Conveyor & Printing System",
+                images: [
+                    "images/loadcell (2).jpg",
+                    "images/loadcell (3).jpg",
+                    "images/loadcell.jpg"
+                ],
+                description: "Developed a real-time weighing and label-printing solution for conveyor systems.",
+                details: [
+                    "Used industrial load cells for accurate weight measurement",
+                    "Integrated Arduino microcontroller for real-time data acquisition",
+                    "Implemented RS232 communication with industrial printers",
+                    "Created a user-friendly HMI using PyQt5",
+                    "Deployed in an industrial setting for product packaging"
+                ],
+                date: "2023",
+                organization: "PT Inti Utama Solusindo",
+                project: "Industrial Weighing and Label Printing System",
+                technologies: ["Arduino", "Load Cell", "RS232", "PyQt5", "C++", "Python"],
+                status: "Completed (2023)",
+                award: ""
+            },
             iris: {
                 title: "IRIS: Integrated Shrimp Scan System",
                 images: [
@@ -875,6 +979,50 @@
                 technologies: ["Computer Vision", "IoT", "Python", "OpenCV", "ESP32"],
                 status: "Completed (2022)",
                 award: "Intellectual Property Rights (IPR) Granted"
+            },
+            powersense: {
+                title: "Project Intern - PowerSense",
+                images: [
+                    "images/powersense (2).jpg",
+                    "images/powersense-2.jpg",
+                    "images/powersense (3).jpg"
+                ],
+                description: "Developed PowerSense, a remote monitoring system for transactional energy usage leveraging IoT.",
+                details: [
+                    "Designed and implemented a remote monitoring system (PowerSense) for energy consumption data",
+                    "Utilized embedded systems for hardware integration",
+                    "Implemented Modbus communication protocol with energy meters",
+                    "Used MQTT and HTTP for real-time data transmission",
+                    "Performed data acquisition, visualization, and remote diagnostics"
+                ],
+                date: "Jan 2024 – Oct 2024",
+                organization: "PT. Pertamina Power Indonesia",
+                project: "PowerSense - IoT-based Energy Monitoring System",
+                technologies: ["IoT", "Embedded Systems", "Modbus", "MQTT", "HTTP", "C/C++", "Python"],
+                status: "Completed (2024)",
+                award: ""
+            },
+            slam: {
+                title: "LiDAR SLAM for 3D Environment Reconstruction",
+                images: [
+                    "images/slam (2).jpg",
+                    "images/slam.jpg",
+                    "images/slam (2).jpg"
+                ],
+                description: "Constructed 3D environments using Velodyne VLP-16 and LeGO-LOAM for real-time SLAM.",
+                details: [
+                    "Used Velodyne VLP-16 for high-resolution 3D point cloud data",
+                    "Implemented LeGO-LOAM for lightweight and efficient SLAM",
+                    "Processed LiDAR and IMU data for real-time 3D mapping",
+                    "Performed loop closure detection and map optimization",
+                    "Tested in indoor and semi-outdoor environments for accuracy"
+                ],
+                date: "2024",
+                organization: "Universitas Pertamina",
+                project: "Real-time 3D Mapping with LiDAR and SLAM",
+                technologies: ["ROS", "LeGO-LOAM", "Velodyne VLP-16", "C++", "PCL", "RViz"],
+                status: "Ongoing (2024)",
+                award: ""
             }
         };
 
@@ -1019,9 +1167,9 @@
             lktim: {
                 title: "1st Winner LKTIM UNNES 2022",
                 images: [
-                    "images/unnes-2",
-                    "images/unnes (2)",
-                    "images/unnes (3)"
+                    "images/unnes-2.jpg",
+                    "images/unnes (2).jpg",
+                    "images/unnes (3).jpg"
                 ],
                 description: "Granted Intellectual Property Rights (IPR) by Kemenkumham for five innovative projects.",
                 details: [
