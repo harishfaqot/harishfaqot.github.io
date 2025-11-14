@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Muhammad Harish - Electrical & Robotics Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .project-card:hover, .award-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .timeline-item:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 24px;
+            height: 100%;
+            width: 2px;
+            background: #e5e7eb;
+        }
+        .skill-bar {
+            transition: width 1.5s ease-in-out;
+        }
+        .gallery-item, .award-image {
+            transition: all 0.3s ease;
+        }
+        .gallery-item:hover, .award-image:hover {
+            transform: scale(1.05);
+            z-index: 10;
+        }
+        #projectModal, #awardModal {
+            transition: all 0.3s ease;
+        }
+        .ribbon {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+        }
+        .ribbon-content {
+            position: absolute;
+            display: block;
+            width: 225px;
+            padding: 15px 0;
+            background-color: #1e40af;
+            box-shadow: 0 5px 10px rgba(0,0,0,.1);
+            color: #fff;
+            font-size: 13px;
+            text-align: center;
+            right: -25px;
+            top: 30px;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-900 to-blue-700 text-white">
+        <div class="container mx-auto px-6 py-16 text-center">
+            <div class="flex justify-center mb-8 relative">
+                <div class="w-40 h-40 rounded-full border-4 border-white overflow-hidden relative">
+                    <img src="images/profile.png" alt="Muhammad Harish">
+                </div>
+            </div>
+            <h1 class="text-4xl font-bold mb-2">Muhammad Harish</h1>
+            <p class="text-xl mb-4">Electrical Engineering & Robotics Engineer</p>
+            <p class="max-w-2xl mx-auto mb-8">Award-winning engineer passionate about robotics, autonomous systems, and industrial automation with multiple national competition victories.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="mailto:harish.faqot02@gmail.com?subject=I%20saw%20your%20portfolio&body=Hello%2C%20I%20found%20your%20website%20and%20would%20like%20to%20get%20in%20touch."
+                    class="inline-flex items-center whitespace-nowrap bg-white text-blue-700 px-6 py-2 rounded-full font-medium hover:bg-blue-100 transition">
+                    <i class="fas fa-envelope mr-2"></i> Send Email
+                </a>
+
+                <!-- <a href="pdf/CV_Muhammad Harish_ATS.pdf" target="_blank" download
+                    class="inline-flex items-center whitespace-nowrap border-2 border-white text-white px-6 py-2 rounded-full font-medium hover:bg-white hover:text-blue-700 transition">
+                    <i class="fas fa-download mr-2"></i> Download CV
+                </a> -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Bar -->
+    <div class="bg-blue-800 text-white py-3">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-2 md:mb-0">
+                    <i class="fas fa-envelope mr-2"></i>
+                    <span>harish.faqot02@gmail.com</span>
+                </div>
+                <div class="flex items-center mb-2 md:mb-0">
+                    <i class="fas fa-map-marker-alt mr-2"></i>
+                    <span>South Jakarta, Indonesia</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fab fa-linkedin mr-2"></i>
+                    <a href="https://www.linkedin.com/in/muhammadharish" target="_blank" class="hover:underline">linkedin.com/in/muhammadharish</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        <!-- About Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center">About Me</h2>
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <p class="mb-6 text-lg">
+                    Passionate and high-achieving Electrical Engineering student with a strong foundation in control systems, robotics, and automation. Hands-on experience in embedded systems, machine learning, IoT, and PLC programming. Proven leadership through national-level competition wins, five registered intellectual property rights, and active roles in research and student organizations. Eager to contribute to innovative engineering projects that make a real-world impact.
+                </p>
+                
+                <div class="mt-8">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Technical Skills</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <div class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
+                            <i class="fas fa-bolt mr-2"></i> Electrical Engineering
+                        </div>
+                        <div class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
+                            <i class="fas fa-code mr-2"></i> Python
+                        </div>
+                        <div class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
+                            <i class="fas fa-microchip mr-2"></i> PLC Programming
+                        </div>
+                        <div class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
+                            <i class="fas fa-robot mr-2"></i> Robotics
+                        </div>
+                        <div class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
+                            <i class="fas fa-eye mr-2"></i> Computer Vision
+                        </div>
+                        <div class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
+                            <i class="fas fa-network-wired mr-2"></i> IoT
+                        </div>
+                        <div class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
+                            <i class="fas fa-project-diagram mr-2"></i> Industrial Automation
+                        </div>
+                        <div class="skill-pill bg-blue-100 text-blue-800 px-4 py-2 rounded-full">
+                            <i class="fas fa-brain mr-2"></i> Machine Learning
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center">Education</h2>
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <div class="space-y-8">
+                    <!-- Education Entry -->
+                    <div class="relative border-l-4 border-blue-600 pl-6">
+                        <h3 class="text-xl font-semibold">University of Pertamina</h3>
+                        <p class="text-gray-700">Electrical Engineering Department</p>
+                        <p class="text-gray-500">September 2021 – Present</p>
+                        <p class="mt-2 text-gray-600">
+                            Concentrations: Control System, Robotics, Artificial Intelligence, Automation System, and Power System Engineering
+                        </p>
+                        <p class="mt-1 font-medium text-gray-800">GPA: 3.95 / 4.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center">Company Experience</h2>
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/3 bg-blue-800 text-white p-8">
+                        <h3 class="text-2xl font-semibold mb-4">Experience Timeline</h3>
+                        <p class="mb-6">Hands-on experience in industrial automation, robotics, and energy systems.</p>
+                        <div class="space-y-2">
+                            <div class="flex items-center">
+                                <div class="w-3 h-3 rounded-full bg-blue-200 mr-2"></div>
+                                <span>PT Inti Utama Solusindo (Present)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-3 h-3 rounded-full bg-blue-200 mr-2"></div>
+                                <span>PT PLN (Persero)</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-3 h-3 rounded-full bg-blue-200 mr-2"></div>
+                                <span>PT Pertamina Power Indonesia</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 p-8">
+                        <div class="relative">
+                            <div class="timeline-item relative pl-8 pb-8">
+                                <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-blue-600 border-4 border-blue-100"></div>
+                                <h4 class="text-xl font-medium">PT Inti Utama Solusindo (Pharos Group)</h4>
+                                <p class="text-gray-500">September 2024 - Present</p>
+                                <ul class="mt-4 space-y-3 list-disc pl-5">
+                                    <li>Developed a semi-autonomous ASRS system using LiDAR sensors, VFDs, and embedded microcontrollers</li>
+                                    <li>Engineered a weighing system using industrial-grade load cells and Arduino-based microcontrollers</li>
+                                    <li>Assisted in building complete P&ID system for water purification with Modbus RS485 communication</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="timeline-item relative pl-8 pb-8">
+                                <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-blue-600 border-4 border-blue-100"></div>
+                                <h4 class="text-xl font-medium">PT PLN (Persero) – Electrical Protection Dept.</h4>
+                                <p class="text-gray-500">February 2024 - March 2024</p>
+                                <ul class="mt-4 space-y-3 list-disc pl-5">
+                                    <li>Analyzed differential current line relay configurations ensuring 100% operational reliability</li>
+                                    <li>Supported implementation of new protection systems</li>
+                                    <li>Final report graded 97.4/100.0</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="timeline-item relative pl-8">
+                                <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-blue-600 border-4 border-blue-100"></div>
+                                <h4 class="text-xl font-medium">PT Pertamina Power Indonesia – Pertamina New & Renewable Energy</h4>
+                                <p class="text-gray-500">January 2024 - October 2024</p>
+                                <ul class="mt-4 space-y-3 list-disc pl-5">
+                                    <li>Executed hardware/software development for energy meter monitoring system</li>
+                                    <li>Increased accuracy in monitoring solar PV electricity consumption</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards Section -->
+        <section id="awards" class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center">Best Awards & Honors</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Award 1 (Visible by default) -->
+                <div class="award-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 relative">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/mapres-2.jpg" alt="Outstanding Student" class="w-full h-full object-cover award-image">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">1st Winner Outstanding Student</h3>
+                        <p class="text-gray-600 mb-4">Selected from 15 faculties across Universitas Pertamina.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">University</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Leadership</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Academic</span>
+                        </div>
+                        <button onclick="openAwardModal('outstanding')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Award 2 (Visible by default) -->
+                <div class="award-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 relative">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/kri.jpg" alt="KRI Awards" class="w-full h-full object-cover award-image">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">2nd Winner KRI - KRSRI 2024</h3>
+                        <p class="text-gray-600 mb-4">Most prestigious Robotics competition in Indonesia held by The Ministry of Education.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">National</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Robotics</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Technology</span>
+                        </div>
+                        <button onclick="openAwardModal('kri')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Award 3 (Visible by default) -->
+                <div class="award-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 relative">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/krti.jpg" alt="KRTI Awards" class="w-full h-full object-cover award-image">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">1st Winner KRI - VTOL 2024</h3>
+                        <p class="text-gray-600 mb-4">Most prestigious UAV competition in Indonesia held by The Ministry of Education.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">National</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">UAV</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Technology</span>
+                        </div>
+                        <button onclick="openAwardModal('krti')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Award 4 (Visible by default) -->
+                <div class="award-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 relative">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/gemastik.jpg" alt="GEMASTIK Award" class="w-full h-full object-cover award-image">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">1st Winner GEMASTIK 2023</h3>
+                        <p class="text-gray-600 mb-4">Most prestigious IT competition in Indonesia held by The Ministry of Education.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">National</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Innovation</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Technology</span>
+                        </div>
+                        <button onclick="openAwardModal('gemastik')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Award 5 (Visible by default) -->
+                <div class="award-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 relative">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/pimnas.jpg" alt="PIMNAS Awards" class="w-full h-full object-cover award-image">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">PKM - PIMNAS 2023</h3>
+                        <p class="text-gray-600 mb-4">Most prestigious Research competition in Indonesia held by The Ministry of Education.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">National</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Innovation</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Technology</span>
+                        </div>
+                        <button onclick="openAwardModal('pkm')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Award 6 (Visible by default) -->
+                <div class="award-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 relative">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/baronas-2.jpg" alt="Baronas Awards" class="w-full h-full object-cover award-image">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">1st Winner BARONAS 2023</h3>
+                        <p class="text-gray-600 mb-4">Robotics and Paper Competition held by Institut Teknologi Sepuluh Nopember.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">National</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Innovation</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Technology</span>
+                        </div>
+                        <button onclick="openAwardModal('baronas')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Award 7 (Hidden by default) -->
+                <div class="award-card hidden more-awards bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 relative">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/HKI.jpg" alt="HKI Awards" class="w-full h-full object-cover award-image">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">5 Intellectual Property Rights</h3>
+                        <p class="text-gray-600 mb-4">Granted by Kemenkumham for innovative projects.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">National</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Intelectual Property</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Technology</span>
+                        </div>
+                        <button onclick="openAwardModal('ipr')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Award 8 (Hidden by default) -->
+                <div class="award-card hidden more-awards bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 relative">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/unnes-2.jpg" alt="LKTIM Awards" class="w-full h-full object-cover award-image">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">1st Winner LKTIM UNNES 2022</h3>
+                        <p class="text-gray-600 mb-4">Paper Competition held by Himpunan Mahasiswa Kimia Universitas Negeri Semarang</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">National</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Innovation</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Technology</span>
+                        </div>
+                        <button onclick="openAwardModal('lktim')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Award 9 (Hidden by default) -->
+                <div class="award-card hidden more-awards bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 relative">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/showcase.jpg" alt="Exhibition Awards" class="w-full h-full object-cover award-image">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Robotics Exhibition</h3>
+                        <p class="text-gray-600 mb-4">Served as team leader for IPA CONVEX 2022 exhibitions.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">National</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Innovation</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Exhibition</span>
+                        </div>
+                        <button onclick="openAwardModal('exhibition')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-10">
+                <button id="viewAllBtn" class="inline-block border-2 border-blue-600 text-blue-600 px-6 py-2 rounded-full font-medium hover:bg-blue-600 hover:text-white transition">
+                    View All Awards
+                </button>
+            </div>
+        </section>
+
+        <script>
+            document.getElementById('viewAllBtn').addEventListener('click', function() {
+                // Toggle all awards with the 'more-awards' class
+                document.querySelectorAll('.more-awards').forEach(award => {
+                    award.classList.toggle('hidden');
+                });
+                
+                // Change button text based on current state
+                if (this.textContent.trim() === 'View All Awards') {
+                    this.textContent = 'Show Less';
+                } else {
+                    this.textContent = 'View All Awards';
+                }
+            });
+        </script>
+
+        <!-- Organizations & Leadership -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center">Organizations & Leadership</h2>
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Org 1 -->
+                    <div class="border-l-4 border-blue-600 pl-4">
+                        <h3 class="text-xl font-semibold">Robotics Student Activity Unit, Universitas Pertamina – Director</h3>
+                        <p class="text-gray-600">Dec 2022 – Oct 2024</p>
+                        <p class="mt-2">
+                            Oversaw team of 17 staff and 60 members executing 15 work programs including research, competitions, and training.
+                        </p>
+                    </div>
+                    
+                    <!-- Org 2 -->
+                    <div class="border-l-4 border-blue-600 pl-4">
+                        <h3 class="text-xl font-semibold">UAV Research Team Universitas Pertamina – Team Leader</h3>
+                        <p class="text-gray-600">Feb 2023 – Sep 2024</p>
+                        <p class="mt-2">
+                            Led UAV team to 1st place at KRTI Regional 2024. Developed autonomous drone with Jetson Nano and LiDAR.
+                        </p>
+                    </div>
+                    
+                    <!-- Org 3 -->
+                    <div class="border-l-4 border-blue-600 pl-4">
+                        <h3 class="text-xl font-semibold">Legged Robot Research Team – Team Leader</h3>
+                        <p class="text-gray-600">Dec 2022 – Jul 2024</p>
+                        <p class="mt-2">
+                            Led team to 2nd place at KRI Regional 2024 with autonomous hexapod robot using computer vision.
+                        </p>
+                    </div>
+                    
+                    <!-- Org 4 -->
+                    <div class="border-l-4 border-blue-600 pl-4">
+                        <h3 class="text-xl font-semibold">Laboratory Assistant – Programming & Electronics</h3>
+                        <p class="text-gray-600">Sep 2022 – Feb 2024</p>
+                        <p class="mt-2">
+                            Guided over 90 students in fundamentals of programming, algorithms, and electronic devices.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 (Visible by default) -->
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/roadsense-3.jpg" alt="Roadsense Project" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Roadsense</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">IPR Granted</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Deep learning-based real-time road damage detection and analysis system.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Python</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">TensorFlow</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">OpenCV</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">IoT</span>
+                        </div>
+                        <button onclick="openModal('roadsense')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 2 (Visible by default) -->
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/bumblebee (3).jpg" alt="Bumblebee Project" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Bumblebee Robot</h3>
+                            <span class="bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded-full">University</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Bumblebee: Hexapod Robot for Disaster Search and Rescue (KRI - KRSRI Project)</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Robotics</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Mechatronics</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">kinematics</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">ROS</span>
+                        </div>
+                        <button onclick="openModal('bumblebee')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 3 (Visible by default) -->
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/skyrone.jpg" alt="Skyrone Project" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Skyrone Drone</h3>
+                            <span class="bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded-full">University</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">SKYRONE: Autonomous Multirotor Robot for Search and Rescue (KRTI - VTOL Project)</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">UAV</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Drone</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">OpenCV</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">IoT</span>
+                        </div>
+                        <button onclick="openModal('skyrone')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 4 (Visible by default) -->
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/hydroponic.jpg" alt="Hydroponic Project" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Hydroponic IoT</h3>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Industrial</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">An IoT system to monitor hydroponic (EC), pH, temp, and hum for optimized plant growth</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">IoT</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Grafana</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">PCB Design</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Panel Wiring</span>
+                        </div>
+                        <button onclick="openModal('hydroponic')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Project 5 (Visible by default) -->
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/asrs.jpg" alt="ASRS System" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Autonomous ASRS System</h3>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Industrial</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Automated Storage & Retrieval System with LiDAR sensors and VFDs for material handling.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">LiDAR</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">VFD</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Embedded</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">PLC</span>
+                        </div>
+                        <button onclick="openModal('asrs')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Project 6 (Visible by default) -->
+                <div class="project-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/loadcell (5).jpg" alt="Loadcell Conveyor" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Loadcell Printer</h3>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Industrial</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Developed a real-time weighing and label-printing solution for conveyor systems.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Industrial</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Arduino</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Protocol Communication</span>
+                        </div>
+                        <button onclick="openModal('loadcell')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 7 (Hidden by default) -->
+                <div class="project-card hidden more-projects bg-white rounded-xl shadow-lg overflow-hidden transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/iris.jpg" alt="Loadcell Conveyor" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">IRIS Shrimp Scan</h3>
+                            <span class="bg-orange-100 text-orange-800 text-xs px-2 py-1 rounded-full">University</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Integrated Shrimp Scan: IoT and Computer Vision system for shrimp larvae counting.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Raspberry</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Computer Vision</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">IoT</span>
+                        </div>
+                        <button onclick="openModal('iris')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 8 (Hidden by default) -->
+                <div class="project-card hidden more-projects bg-white rounded-xl shadow-lg overflow-hidden transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/powersense.jpg" alt="Loadcell Conveyor" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">Powersense</h3>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Industrial</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Remote monitoring system for transactional energy usage leveraging IoT.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Technology</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">IoT</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">ESP32</span>
+                        </div>
+                        <button onclick="openModal('powersense')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 9 (Hidden by default) -->
+                <div class="project-card hidden more-projects bg-white rounded-xl shadow-lg overflow-hidden transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="images/slam.jpg" alt="Loadcell Conveyor" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-bold">LiDAR SLAM</h3>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Industrial</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Constructed 3D environments using Velodyne VLP-16 and LeGO-LOAM for real-time SLAM.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">Technology</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">SLAM</span>
+                            <span class="bg-gray-100 px-2 py-1 text-xs rounded">ROS</span>
+                        </div>
+                        <button onclick="openModal('slam')" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <button id="viewAllProjectsBtn" class="inline-block border-2 border-blue-600 text-blue-600 px-6 py-2 rounded-full font-medium hover:bg-blue-600 hover:text-white transition">
+                    View All Projects
+                </button>
+            </div>
+        </section>
+
+        <script>
+            document.getElementById('viewAllProjectsBtn').addEventListener('click', function() {
+                // Toggle all projects with the 'more-projects' class
+                document.querySelectorAll('.more-projects').forEach(project => {
+                    project.classList.toggle('hidden');
+                });
+                
+                // Change button text based on current state
+                if (this.textContent.trim() === 'View All Projects') {
+                    this.textContent = 'Show Less';
+                } else {
+                    this.textContent = 'View All Projects';
+                }
+            });
+        </script>
+
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center">Project Gallery</h2>
+            <div id="gallery" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"></div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold mb-8 text-center">Get In Touch</h2>
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-blue-700 text-white p-8">
+                        <h3 class="text-2xl font-semibold mb-4">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 text-blue-800 p-2 rounded-full mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Email</h4>
+                                    <p class="text-blue-100">harish.faqot02@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 text-blue-800 p-2 rounded-full mr-4">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Phone</h4>
+                                    <p class="text-blue-100">+62 819 3127 6722</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 text-blue-800 p-2 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">Location</h4>
+                                    <p class="text-blue-100">South Jakarta, Indonesia</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 text-blue-800 p-2 rounded-full mr-4">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">LinkedIn</h4>
+                                    <a href="www.linkedin.com/in/muhammadharish" target="_blank" class="text-blue-100 hover:underline">linkedin.com/in/muhammadharish</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <h3 class="text-2xl font-semibold mb-4">Send Me a Message</h3>
+                        <form action="https://formsubmit.co/9a96938b33b773af39702bb5b76ee248" method="POST" class="space-y-4">
+                            <input type="hidden" name="_captcha" value="false">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-1">Name</label>
+                                <input type="text" name="name" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-1">Email</label>
+                                <input type="email" name="email" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label for="subject" class="block text-gray-700 mb-1">Subject</label>
+                                <input type="text" name="subject" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-700 mb-1">Message</label>
+                                <textarea name="message" rows="4" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden">
+        <div class="bg-white rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 id="modalTitle" class="text-2xl font-bold">Project Title</h3>
+                    <button onclick="closeModal()" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <div id="modalContent" class="space-y-4">
+                    <!-- Content will be inserted here by JavaScript -->
+                </div>
+                
+                <div class="mt-6">
+                    <button onclick="closeModal()" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Award Modal -->
+    <div id="awardModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center hidden">
+        <div class="bg-white rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 id="awardModalTitle" class="text-2xl font-bold">Award Title</h3>
+                    <button onclick="closeAwardModal()" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                
+                <div id="awardModalContent" class="space-y-4">
+                    <!-- Content will be inserted here by JavaScript -->
+                </div>
+                
+                <div class="mt-6">
+                    <button onclick="closeAwardModal()" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold">Muhammad Harish</h3>
+                    <p class="text-gray-400">Electrical Engineering & Robotics Engineer</p>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="https://www.linkedin.com/in/muhammadharish" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-700 transition">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://instagram.com/harishfaqot" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-pink-600 transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@harishfaqot" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-pink-600 transition">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://github.com/harishfaqot" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-6 pt-6 text-center text-gray-400">
+                <p>&copy; 2025 Muhammad Harish. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Project data
+        const projects = {
+            roadsense: {
+                title: "Roadsense: Road Damage Detection System",
+                images: [
+                   "images/roadsense-2.jpg",
+                   "images/roadsense-3.jpg",
+                   "images/roadsense-4.jpg"
+                ],
+                description: "Roadsense is a deep learning-based real-time road damage detection and analysis system that won 1st place at GEMASTIK 2023, the most prestigious IT competition for college students in Indonesia held by The Ministry of Education, Culture, Research, and Technology.",
+                details: [
+                    "Utilizes YOLOv5 and OpenCV for real-time image processing",
+                    "Implements edge computing for processing on IoT devices",
+                    "Features a web-based dashboard for visualization and reporting",
+                    "Achieved 95% accuracy in road damage classification",
+                    "Granted Intellectual Property Rights (IPR) by Kemenkumham"
+                ],
+                technologies: ["Python", "YOLO", "OpenCV", "IoT", "Edge Computing", "Flask"],
+                status: "Completed (2023)",
+                award: "1st Winner GEMASTIK 2023"
+            },
+            bumblebee: {
+                title: "Bumblebee: Hexapod Robot for Disaster Search and Rescue with Obstacle Navigation and Victim Detection Using Machine Learning (KRI - KRSRI Project)",
+                images: [
+                    "images/kri.jpg",
+                    "images/bumblebee (2).jpg",
+                    "images/bumblebee (3).jpg"
+                ],
+                description: "Bumblebee: Hexapod Robot for Disaster Search and Rescue with Obstacle Navigation and Victim Detection Using Machine Learning.",
+                details: [
+                    "Achieved 2nd place as Regional Winner and advanced as National Finalist in the KRSRI (Kontes Robot SAR Indonesia) Division at KRI 2024.",
+                    "Designed for disaster search and rescue missions, capable of navigating post-disaster environments to rescue victims.",
+                    "Equipped with NVIDIA Jetson and sensors: camera, ultrasonic, gyroscope, and compass to detect obstacles and determine paths.",
+                    "Utilizes machine learning to identify victims among debris.",
+                    "Hexapod design (six legs) offers high stability and adaptability on uneven terrain.",
+                    "Implements inverse kinematics and gait algorithms for spider-like walking behavior.",
+                    "Demonstrates innovation in autonomous systems, robotics, and teamwork."
+                ],
+                technologies: ["NVIDIA Jetson", "Robotics", "Kinematic", "3D Printing", "Edge Computing", "Robot Operating System"],
+                status: "Completed (2024)",
+                award: "2nd Winner (Wilayah) Kontes Robot Indonesia - KRSRI Division"
+            },
+            skyrone: {
+                title: "Kontes Robot Terbang Indonesia",
+                images: [
+                    "images/skyrone.jpg",
+                    "images/skyrone (4).jpg",
+                    "images/skyrone (2).jpg"
+                ],
+                description: "Skyrone: Autonomous VTOL Robot for Search and Rescue Missions with Advanced Navigation and Vision Capabilities.",
+                details: [
+                    "Achieved 1st place as Regional Winner and advanced as National Finalist in the VTOL Division at KRTI 2024.",
+                    "Skyrone is a VTOL (Vertical Take-Off and Landing) robot developed for aerial search and rescue operations.",
+                    "Features include autonomous flight, obstacle avoidance, and computer vision for target detection.",
+                    "Built using ROS (Robot Operating System) for modular and scalable development.",
+                    "Equipped with indoor navigation capability and Object Detection using SSD MobileNet and YOLOv5.",
+                    "Can fly up to 15 minutes per mission, balancing endurance and agility.",
+                    "Demonstrates strong proficiency in drone technology, autonomy, and robotics systems engineering."
+                ],
+                technologies: ["NVIDIA Jetson", "Robotics", "Drone UAV", "3D Printing", "Edge Computing", "Robot Operating System"],
+                status: "Completed (2024)",
+                award: "1st Winner (Wilayah) Kontes Robot Terbang Indonesia - VTOL Division"
+            },
+            hydroponic: {
+                title: "IoT-Based Hydroponic Monitoring System",
+                images: [
+                    "images/hydroponic (4).jpg",
+                    "images/hydroponic (3).jpg",
+                    "images/hydroponic (2).jpg"
+                ],
+                description: "An IoT system designed to monitor hydroponic parameters such as nutrition (EC), pH, temperature, and humidity for optimized plant growth.",
+                details: [
+                    "Real-time monitoring of pH, EC (nutrient), temperature, and humidity",
+                    "Data accessible remotely via IoT dashboard or mobile app (Grafana and Home Assistant)",
+                    "Data logging and visualization for trend analysis",
+                    "Potential for automatic dosing and environment control integration"
+                ],
+                technologies: ["IoT", "Linux Server", "Grafana", "PCB Design", "Embedded System", "HMI", "Arduino"],
+                status: "Completed (2024)",
+                award: "Self Project"
+            },
+            asrs: {
+                title: "Autonomous ASRS System",
+                images: [
+                    "images/asrs (2).jpg",
+                    "images/asrs (3).jpg",
+                    "images/asrs (4).jpg",
+                ],
+                description: "Developed at PT Inti Utama Solusindo (Pharos Group), this semi-autonomous Automated Storage & Retrieval System uses LiDAR sensors, Variable Frequency Drives (VFDs), and embedded microcontrollers to automate material handling in industrial environments.",
+                details: [
+                    "Designed obstacle detection using LiDAR sensors",
+                    "Implemented motion control logic with embedded microcontrollers",
+                    "Implemented ROS (Robot Operating System) to control all actuator such as VFD, Hydraulic, and Motor"
+                ],
+                technologies: ["LiDAR", "VFD", "Embedded C", "PLC", "Industrial Automation"],
+                status: "Ongoing Development",
+                award: "Industrial Implementation"
+            },
+            loadcell: {
+                title: "Load Cell Conveyor & Printing System",
+                images: [
+                    "images/loadcell (2).jpg",
+                    "images/loadcell (3).jpg",
+                    "images/loadcell.jpg"
+                ],
+                description: "Developed a real-time weighing and label-printing solution for conveyor systems.",
+                details: [
+                    "Used industrial load cells for accurate weight measurement",
+                    "Integrated Arduino microcontroller for real-time data acquisition",
+                    "Implemented RS232 communication with industrial printers",
+                    "Created a user-friendly HMI using PyQt5",
+                    "Deployed in an industrial setting for product packaging"
+                ],
+                date: "2023",
+                organization: "PT Inti Utama Solusindo",
+                project: "Industrial Weighing and Label Printing System",
+                technologies: ["Arduino", "Load Cell", "RS232", "PyQt5", "C++", "Python"],
+                status: "Completed (2023)",
+                award: ""
+            },
+            iris: {
+                title: "IRIS: Integrated Shrimp Scan System",
+                images: [
+                    "images/iris (2).jpg",
+                    "images/iris (3).jpg",
+                    "images/iris (4).jpg",
+                ],
+                description: "IRIS (Integrated Shrimp Scan) is an IoT and Computer Vision system for shrimp larvae counting that has been granted Intellectual Property Rights (IPR) by Kemenkumham. The system automates the traditionally manual process of shrimp larvae counting in aquaculture.",
+                details: [
+                    "Uses OpenCV for image processing and object detection",
+                    "Features IoT connectivity for remote monitoring",
+                    "Achieves 98% counting accuracy compared to manual methods",
+                    "Reduces counting time from hours to seconds",
+                    "Includes data analytics dashboard for growth tracking"
+                ],
+                technologies: ["Computer Vision", "IoT", "Python", "OpenCV", "ESP32"],
+                status: "Completed (2022)",
+                award: "Intellectual Property Rights (IPR) Granted"
+            },
+            powersense: {
+                title: "Project Intern - PowerSense",
+                images: [
+                    "images/powersense (2).jpg",
+                    "images/powersense-2.jpg",
+                    "images/powersense (3).jpg"
+                ],
+                description: "Developed PowerSense, a remote monitoring system for transactional energy usage leveraging IoT.",
+                details: [
+                    "Designed and implemented a remote monitoring system (PowerSense) for energy consumption data",
+                    "Utilized embedded systems for hardware integration",
+                    "Implemented Modbus communication protocol with energy meters",
+                    "Used MQTT and HTTP for real-time data transmission",
+                    "Performed data acquisition, visualization, and remote diagnostics"
+                ],
+                date: "Jan 2024 – Oct 2024",
+                organization: "PT. Pertamina Power Indonesia",
+                project: "PowerSense - IoT-based Energy Monitoring System",
+                technologies: ["IoT", "Embedded Systems", "Modbus", "MQTT", "HTTP", "C/C++", "Python"],
+                status: "Completed (2024)",
+                award: ""
+            },
+            slam: {
+                title: "LiDAR SLAM for 3D Environment Reconstruction",
+                images: [
+                    "images/slam (2).jpg",
+                    "images/slam.jpg",
+                    "images/slam (2).jpg"
+                ],
+                description: "Constructed 3D environments using Velodyne VLP-16 and LeGO-LOAM for real-time SLAM.",
+                details: [
+                    "Used Velodyne VLP-16 for high-resolution 3D point cloud data",
+                    "Implemented LeGO-LOAM for lightweight and efficient SLAM",
+                    "Processed LiDAR and IMU data for real-time 3D mapping",
+                    "Performed loop closure detection and map optimization",
+                    "Tested in indoor and semi-outdoor environments for accuracy"
+                ],
+                date: "2024",
+                organization: "Universitas Pertamina",
+                project: "Real-time 3D Mapping with LiDAR and SLAM",
+                technologies: ["ROS", "LeGO-LOAM", "Velodyne VLP-16", "C++", "PCL", "RViz"],
+                status: "Ongoing (2024)",
+                award: ""
+            }
+        };
+
+        // Award data
+        const awards = {
+            outstanding: {
+                title: "Most Outstanding Student - Universitas Pertamina",
+                images: [
+                    "images/mapres-3.jpg",
+                    "images/mapres-4.png",
+                    "images/mapres.jpg"
+                ],
+                description: "Selected as The Most Outstanding Student from a pool of candidates representing 15 faculties across Universitas Pertamina.",
+                details: [
+                    "Recognized for exceptional academic performance (GPA 3.95/4.00)",
+                    "Acknowledged for leadership in student organizations",
+                    "Recognized for research contributions and competition achievements",
+                    "Received university-wide recognition and award",
+                    "Represented university at national events"
+                ],
+                date: "February 2024",
+                organization: "Universitas Pertamina",
+                project: "Multiple projects including Roadsense, IRIS, and EMA"
+            },
+            kri: {
+                title: "Kontes Robot Indonesia",
+                images: [
+                    "images/kri.jpg",
+                    "images/bumblebee (2).jpg",
+                    "images/bumblebee (3).jpg"
+                ],
+                description: "Bumblebee: Hexapod Robot for Disaster Search and Rescue with Obstacle Navigation and Victim Detection Using Machine Learning.",
+                details: [
+                    "Achieved 2nd place as Regional Winner and advanced as National Finalist in the KRSRI (Kontes Robot SAR Indonesia) Division at KRI 2024.",
+                    "Designed for disaster search and rescue missions, capable of navigating post-disaster environments to rescue victims.",
+                    "Equipped with NVIDIA Jetson and sensors: camera, ultrasonic, gyroscope, and compass to detect obstacles and determine paths.",
+                    "Utilizes machine learning to identify victims among debris.",
+                    "Hexapod design (six legs) offers high stability and adaptability on uneven terrain.",
+                    "Implements inverse kinematics and gait algorithms for spider-like walking behavior.",
+                    "Demonstrates innovation in autonomous systems, robotics, and teamwork."
+                ],
+                date: "Dec 2022 – Jul 2024",
+                organization: "Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi",
+                project: "Bumblebee – KRSRI Division"
+            },
+            krti: {
+                title: "Kontes Robot Terbang Indonesia",
+                images: [
+                    "images/skyrone.jpg",
+                    "images/skyrone (4).jpg",
+                    "images/skyrone (2).jpg"
+                ],
+                description: "Skyrone: Autonomous VTOL Robot for Search and Rescue Missions with Advanced Navigation and Vision Capabilities.",
+                details: [
+                    "Achieved 1st place as Regional Winner and advanced as National Finalist in the VTOL Division at KRTI 2024.",
+                    "Skyrone is a VTOL (Vertical Take-Off and Landing) robot developed for aerial search and rescue operations.",
+                    "Features include autonomous flight, obstacle avoidance, and computer vision for target detection.",
+                    "Built using ROS (Robot Operating System) for modular and scalable development.",
+                    "Equipped with indoor navigation capability and Object Detection using SSD MobileNet and YOLOv5.",
+                    "Can fly up to 15 minutes per mission, balancing endurance and agility.",
+                    "Demonstrates strong proficiency in drone technology, autonomy, and robotics systems engineering."
+                ],
+                date: "Feb 2023 – Sep 2024",
+                organization: "Kementerian Pendidikan, Kebudayaan, Riset, dan Teknologi",
+                project: "Skyrone – VTOL Division"
+            },
+            gemastik: {
+                title: "1st Winner - GEMASTIK 2023",
+                images: [
+                    "images/roadsense-3.jpg",
+                    "images/roadsense-5.jpg",
+                    "images/roadsense-6.jpg",
+                ],
+                description: "Won 1st place at GEMASTIK 2023, the most prestigious IT competition for college students in Indonesia held by The Ministry of Education, Culture, Research, and Technology.",
+                details: [
+                    "Competed against 300+ teams from universities across Indonesia",
+                    "Project: Roadsense - Deep learning-based road damage detection",
+                    "Recognized for innovation in combining edge computing with deep learning",
+                    "Received cash prize and national recognition",
+                    "Led team of 3 members in development and presentation"
+                ],
+                date: "September 2023",
+                organization: "Kemendikbudristek",
+                project: "Roadsense: Pemetaan berbasis deep learning sebagai pendeteksi dan analisis kerusakan jalan secara real time"
+            },
+            pkm: {
+                title: "Program Kreativitas Mahasiswa",
+                images: [
+                    "images/pimnas (2).jpg", 
+                    "images/pimnas (3).jpg", 
+                    "images/pimnas (4).jpg" 
+                ],
+                description: "Participated in multiple PKM categories funded by Kemendikbudristek, working on innovative and community-driven technological solutions.",
+                details: [
+                    "E-MA (Energy Monitoring Assistant) – PKM Karya Inovatif: Created an IoT-based system to record and forecast household electricity consumption. Funding: Rp8.250.000. Selected for PIMNAS 2023.",
+                    "MAP-Road – PKM Karsa Cipta: Developed a road damage detection and mapping system using edge computing and deep learning. Funding: Rp8.000.000."
+                ],
+                date: "Mar 2023 – Sep 2023",
+                organization: "Universitas Pertamina",
+                project: "Multiple PKM initiatives including E-MA and MAP-Road"
+            },
+            ipr: {
+                title: "5 Intellectual Property Rights",
+                images: [
+                    "images/ipr.jpg",
+                    "images/ipr (2).jpg",
+                    "images/ipr (3).jpg"
+                ],
+                description: "Granted Intellectual Property Rights (IPR) by Kemenkumham for five innovative projects.",
+                details: [
+                    "Roadsense: Deep Learning for Road Damage Detection",
+                    "IRIS: IoT and Computer Vision for Shrimp Larvae Counting",
+                    "EMA: IoT-based Energy Monitoring and Analysis",
+                    "MAP-Road: Edge Computing Road Damage Mapping",
+                    "WeCan-See: Personal Assistance for Visually Impaired",
+                    "Each IPR represents significant technological innovation",
+                    "Legal protection for original creations"
+                ],
+                date: "2022-2024",
+                organization: "Kemenkumham",
+                project: "Multiple innovative projects"
+            },
+            baronas: {
+                title: "1st Winner BARONAS Paper Competition",
+                images: [
+                    "images/baronas-3.jpg",
+                    "images/baronas-4.jpg",
+                    "images/baronas-5.jpg"
+                ],
+                description: "Won 1st place in the BARONAS (Barometer Nasional) Paper Competition at Institut Teknologi Sepuluh Nopember (ITS).",
+                details: [
+                    "Project Title: ROAD-MAP – Pemetaan Jalan Rusak Berbasis Internet of Things dan Website dengan metode Deep Learning dan Edge Computing",
+                    "Implemented YOLOv5 with hyperparameter tuning for optimal detection accuracy",
+                    "Deployed system on Raspberry Pi 4 for real-time edge inference",
+                    "Integrated IoT with camera, GPS, and gyroscope for complete mapping solution",
+                    "Enabled real-time road damage detection and data upload via web interface"
+                ],
+                date: "Mar 2023",
+                organization: "Institut Teknologi Sepuluh Nopember (ITS)",
+                project: "ROAD-MAP: IoT-based Road Damage Mapping System"
+            },
+            lktim: {
+                title: "1st Winner LKTIM UNNES 2022",
+                images: [
+                    "images/unnes-2.jpg",
+                    "images/unnes (2).jpg",
+                    "images/unnes (3).jpg"
+                ],
+                description: "Granted Intellectual Property Rights (IPR) by Kemenkumham for five innovative projects.",
+                details: [
+                    "Roadsense: Deep Learning for Road Damage Detection",
+                    "IRIS: IoT and Computer Vision for Shrimp Larvae Counting",
+                    "EMA: IoT-based Energy Monitoring and Analysis",
+                    "MAP-Road: Edge Computing Road Damage Mapping",
+                    "WeCan-See: Personal Assistance for Visually Impaired",
+                    "Each IPR represents significant technological innovation",
+                    "Legal protection for original creations"
+                ],
+                date: "2022-2024",
+                organization: "Kemenkumham",
+                project: "Multiple innovative projects"
+            },
+            exhibition: {
+                title: "Robotics Exhibition",
+                images: [
+                    "images/showcase (3).jpg",
+                    "images/showcase (2).jpg",
+                    "images/showcase.jpg"
+                ],
+                description: "Served as team leader for the Universitas Pertamina booth at the IPA CONVEX 2022 exhibition.",
+                details: [
+                    "Represented Universitas Pertamina in the IPA CONVEX 2022 exhibition",
+                    "Promoted the university's Robotics Club (UKM Robotik) to a national audience",
+                    "Showcased robotic technologies including drones, computer vision systems, and legged robots"
+                ],
+                date: "2022",
+                organization: "Universitas Pertamina",
+                project: "Robotic technology showcase and public engagement"
+            }
+        };
+
+        // Modal functions
+        function openModal(projectId) {
+            const project = projects[projectId];
+            document.getElementById('modalTitle').textContent = project.title;
+            
+            let content = `
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div>
+                        <div class="mb-4 rounded-lg overflow-hidden">
+                            <img src="${project.images[0]}" alt="${project.title}" class="w-full h-64 object-cover">
+                        </div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <div class="rounded-lg overflow-hidden">
+                                <img src="${project.images[1]}" alt="${project.title}" class="w-full h-32 object-cover">
+                            </div>
+                            <div class="rounded-lg overflow-hidden">
+                                <img src="${project.images[2]}" alt="${project.title}" class="w-full h-32 object-cover">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-2">Project Description</h4>
+                        <p class="mb-4">${project.description}</p>
+                        
+                        <h4 class="text-lg font-semibold mb-2">Key Features</h4>
+                        <ul class="list-disc pl-5 space-y-1 mb-4">
+                            ${project.details.map(detail => `<li>${detail}</li>`).join('')}
+                        </ul>
+                        
+                        <div class="mb-4">
+                            <h4 class="text-lg font-semibold mb-2">Technologies Used</h4>
+                            <div class="flex flex-wrap gap-2">
+                                ${project.technologies.map(tech => `<span class="bg-gray-100 px-2 py-1 text-xs rounded">${tech}</span>`).join('')}
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <h4 class="text-lg font-semibold mb-2">Status</h4>
+                                <p>${project.status}</p>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold mb-2">Awards</h4>
+                                <p>${project.award}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            document.getElementById('modalContent').innerHTML = content;
+            document.getElementById('projectModal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('projectModal').classList.add('hidden');
+        }
+
+        function openAwardModal(awardId) {
+            const award = awards[awardId];
+            document.getElementById('awardModalTitle').textContent = award.title;
+            
+            let content = `
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div>
+                        <div class="mb-4 rounded-lg overflow-hidden">
+                            <img src="${award.images[0]}" alt="${award.title}" class="w-full h-64 object-cover">
+                        </div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <div class="rounded-lg overflow-hidden">
+                                <img src="${award.images[1]}" alt="${award.title}" class="w-full h-32 object-cover">
+                            </div>
+                            <div class="rounded-lg overflow-hidden">
+                                <img src="${award.images[2]}" alt="${award.title}" class="w-full h-32 object-cover">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-2">Award Description</h4>
+                        <p class="mb-4">${award.description}</p>
+                        
+                        <h4 class="text-lg font-semibold mb-2">Achievement Details</h4>
+                        <ul class="list-disc pl-5 space-y-1 mb-4">
+                            ${award.details.map(detail => `<li>${detail}</li>`).join('')}
+                        </ul>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <h4 class="text-lg font-semibold mb-2">Date</h4>
+                                <p>${award.date}</p>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold mb-2">Organization</h4>
+                                <p>${award.organization}</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <h4 class="text-lg font-semibold mb-2">Related Project</h4>
+                            <p>${award.project}</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            document.getElementById('awardModalContent').innerHTML = content;
+            document.getElementById('awardModal').classList.remove('hidden');
+        }
+
+        function closeAwardModal() {
+            document.getElementById('awardModal').classList.add('hidden');
+        }
+
+        // Animate skill bars on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const skillBars = document.querySelectorAll('.skill-bar');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const width = entry.target.style.width;
+                        entry.target.style.width = '0';
+                        setTimeout(() => {
+                            entry.target.style.width = width;
+                        }, 100);
+                    }
+                });
+            }, {threshold: 0.1});
+            
+            skillBars.forEach(bar => {
+                observer.observe(bar);
+            });
+        });
+
+        //Galery Images
+        const totalImages = 14; // total images in folder
+        const imageCount = 12;   // number of images to show
+        const imageIndexes = [...Array(totalImages).keys()].sort(() => 0.5 - Math.random()).slice(0, imageCount);
+        const gallery = document.getElementById("gallery");
+
+        imageIndexes.forEach(i => {
+            const img = document.createElement("img");
+            img.src = `images/gallery/img (${i + 1}).jpg`;
+            img.alt = `Project ${i + 1}`;
+            img.className = "w-full h-48 object-cover";
+            
+            const wrapper = document.createElement("div");
+            wrapper.className = "gallery-item overflow-hidden rounded-lg shadow-md";
+            wrapper.appendChild(img);
+
+            gallery.appendChild(wrapper);
+        });
+
+    </script>
+</body>
+</html>
