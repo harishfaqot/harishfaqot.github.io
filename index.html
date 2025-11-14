@@ -646,6 +646,22 @@
                 status: "2025",
                 award: "Industrial Projects"
             },
+            skyrone_v2: {
+                title: "Skyrone V2: Next-Generation Autonomous VTOL Drone",
+                images: ["images/skyronev2.jpg", "images/skyronev2-2.jpg", "images/skyronev2-3.jpg"],
+                description: "Second-generation VTOL drone with advanced LiDAR-based autonomy for high-precision search and rescue missions. Based on Kontes Robot Terbang Indonesia 2025 (Indonesia UAV Competition)",
+                details: [
+                    "Upgraded with Livox Mid-360 LiDAR",
+                    "FAST-LIO2 for high-frequency LiDAR odometry",
+                    "Ego-Planner for real-time path planning and obstacle avoidance",
+                    "Improved stability and autonomous navigation",
+                    "Enhanced vision detection pipeline (YOLOv11)",
+                    "20+ minutes flight endurance"
+                ],
+                technologies: ["Livox Mid-360", "FAST-LIO2", "Ego-Planner", "NVIDIA Jetson", "ROS2", "UAV", "Computer Vision", "LiDAR"],
+                status: "2025",
+                award: "Research Prototype"
+            },
             bumblebee: {
                 title: "Bumblebee: Hexapod Rescue Robot",
                 images: ["images/bumblebee.jpg", "images/bumblebee-2.jpg", "images/bumblebee-3.jpg"],
@@ -657,13 +673,13 @@
                     "Inverse kinematics for locomotion"
                 ],
                 technologies: ["NVIDIA Jetson", "Robotics", "ROS", "3D Printing", "ML"],
-                status: "2025",
+                status: "2024",
                 award: "2nd Winner KRI - KRSRI"
             },
             skyrone: {
                 title: "Skyrone: Autonomous VTOL Drone",
                 images: ["images/skyrone.jpg", "images/skyrone-2.jpg", "images/skyrone-3.jpg"],
-                description: "VTOL drone for autonomous search and rescue operations.",
+                description: "VTOL drone for autonomous search and rescue operations. Based on Kontes Robot Terbang Indonesia 2024 (Indonesia UAV Competition)",
                 details: [
                     "1st Place KRTI 2024 - VTOL Division",
                     "Autonomous flight & obstacle avoidance",
@@ -671,7 +687,7 @@
                     "15min flight endurance"
                 ],
                 technologies: ["NVIDIA Jetson", "ROS", "UAV", "Computer Vision"],
-                status: "2025",
+                status: "2024",
                 award: "1st Winner KRTI - VTOL"
             },
             hydroponic: {
@@ -684,7 +700,7 @@
                     "Data logging & visualization"
                 ],
                 technologies: ["IoT", "Grafana", "PCB", "Embedded", "Arduino"],
-                status: "2025",
+                status: "2024",
                 award: "Self Project"
             },
             slam: {
@@ -697,7 +713,7 @@
                     "Real-time 3D mapping"
                 ],
                 technologies: ["ROS", "LeGO-LOAM", "LiDAR", "C++"],
-                status: "2025",
+                status: "2024",
                 award: ""
             },
             asrs: {
@@ -964,6 +980,7 @@
             detailsList.innerHTML = '';
             if (p.details && p.details.length > 0) {
                 const ul = document.createElement('ul');
+                ul.style.marginLeft = "20px";
                 p.details.forEach(detail => {
                     const li = document.createElement('li');
                     li.textContent = detail;
@@ -1005,6 +1022,7 @@
             detailsList.innerHTML = '';
             if (a.details && a.details.length > 0) {
                 const ul = document.createElement('ul');
+                ul.style.marginLeft = "20px";
                 a.details.forEach(detail => {
                     const li = document.createElement('li');
                     li.textContent = detail;
