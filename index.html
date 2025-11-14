@@ -525,9 +525,9 @@
             </p>
             <ul>
                 <li><strong>SLAM & Autonomous Navigation</strong> (FAST-LIO2, VIO, LiDAR mapping)</li>
-                <li><strong>Robotic Perception</strong> (Deep learning, CV, object detection)</li>
+                <li><strong>Robotic Perception</strong> (Deep learning, CV, Object Detection, VLM)</li>
                 <li><strong>Embedded Intelligence</strong> (Jetson, ESP32, PLC, IoT)</li>
-                <li><strong>Motion Planning & Control</strong> (PID, MPC, EGO-Planner)</li>
+                <li><strong>Motion Planning & Control</strong> (PID, RL, EGO-Planner)</li>
             </ul>
         </section>
 
@@ -632,6 +632,20 @@
     <script>
         // Project data
         const projects = {
+            skyline: {
+                title: "Skyline X500 Autonomous Mapping Drone",
+                images: ["images/skyline.jpg", "images/skyline-2.jpg", "images/skyline-3.jpg"],
+                description: "Skyline X500 is an autonomous drone platform designed for mapping and localization in harsh and GPS-denied environments such as gold mining sites. The drone features a spherical protective frame, enabling safe flight in indoor or cluttered areas.",
+                details: [
+                    "Jetson Xavier for onboard SLAM computation",
+                    "Pixhawk Cube for flight control and stability",
+                    "Livox Mid360 LiDAR for real-time 3D mapping and obstacle detection",
+                    "Implemented real-time LiDAR-based SLAM for autonomous indoor flight"
+                ],
+                technologies: ["NVIDIA Jetson", "Robotics", "ROS", "LiDAR", "SLAM"],
+                status: "2025",
+                award: "Industrial Projects"
+            },
             bumblebee: {
                 title: "Bumblebee: Hexapod Rescue Robot",
                 images: ["images/bumblebee.jpg", "images/bumblebee-2.jpg", "images/bumblebee-3.jpg"],
