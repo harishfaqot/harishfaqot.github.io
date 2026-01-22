@@ -1,7 +1,7 @@
 from PIL import Image
 import os
 
-input_folder = "images"      # folder asal
+input_folder = "."      # folder asal
 output_folder = "output"     # folder hasil kompres
 max_size_kb = 100            # target size 100KB
 
