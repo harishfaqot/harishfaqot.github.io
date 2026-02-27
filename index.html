@@ -65,7 +65,7 @@
         }
         
         .intro a {
-            color: #3498db;
+            color: #B59410;
             text-decoration: none;
         }
         
@@ -79,7 +79,7 @@
             padding: 20px;
             border-radius: 8px;
             margin-bottom: 40px;
-            border-left: 4px solid #3498db;
+            border-left: 4px solid #B59410;
         }
         
         .updates-header {
@@ -124,7 +124,7 @@
             padding: 25px;
             border-radius: 8px;
             margin-bottom: 30px;
-            border-left: 4px solid #3498db;
+            border-left: 4px solid #B59410;
         }
         
         .education-header {
@@ -158,7 +158,7 @@
             padding: 15px;
             border-radius: 6px;
             margin-top: 15px;
-            border-left: 3px solid #3498db;
+            border-left: 3px solid #B59410;
         }
         
         .thesis-title {
@@ -173,7 +173,7 @@
         
         .highlight-badge {
             display: inline-block;
-            background-color: #3498db;
+            background-color: #B59410;
             color: white;
             padding: 5px 12px;
             border-radius: 20px;
@@ -235,7 +235,7 @@
             border-radius: 8px;
             background-color: #f8f9fa;
             transition: all 0.3s;
-            border-left: 4px solid #3498db;
+            border-left: 4px solid #B59410;
             display: flex;
             align-items: center;
             gap: 15px;
@@ -479,7 +479,7 @@
         }
         
         .tech-tag {
-            background-color: #3498db;
+            background-color: #B59410;
             color: white;
             padding: 5px 10px;
             border-radius: 20px;
@@ -560,19 +560,11 @@
             <div class="intro">
                 <h1>Muhammad Harish</h1>
                 <p>
-                    I am a <strong>Full-Stack Robotics Engineer</strong> with experience
-                    in autonomous systems, embedded intelligence, and robotic
-                    perception. I develop end-to-end robotic systems integrating
-                    <strong>LiDAR, cameras, embedded controllers (Jetson, ESP32, Arduino), ROS1/ROS2,
-                    SLAM, and AI-driven autonomy</strong>.
+                <strong>Robotics Research Engineer</strong> with experience in autonomous systems, embedded intelligence, and robotic perception. Skilled in <strong>LiDAR</strong>, <strong>cameras</strong>, <strong>ROS1/ROS2</strong>, <strong>SLAM</strong>, and <strong>AI-driven autonomy</strong>.
                 </p>
 
                 <p>
-                    I hold a <strong>Bachelor of Electrical Engineering</strong> from
-                    <strong>Universitas Pertamina</strong>, specializing in
-                    <strong>Control Systems, Robotics, and Artificial Intelligence</strong>.
-                    My thesis focused on
-                    <strong>Reinforcement Learning for Hexapod Locomotion</strong>.
+                Graduated <strong>1st of 180 in the Faculty of Engineering</strong> at <strong>Universitas Pertamina</strong> (GPA <strong>3.96/4.00</strong>). Thesis awarded <strong>1st Best Paper ALMI National Thesis Award</strong>, integrating Inverse Kinematics with Reinforcement Learning.
                 </p>
 
                 <p>
@@ -580,7 +572,7 @@
                     >harish.faqot02@gmail.com</a
                     >
                     |
-                    <a href="Muhammad Harish_CV.pdf" target="_blank">CV</a>
+                    <a href="Muhammad_Harish_CV.pdf" target="_blank">CV</a>
                     |
                     <a
                     href="https://www.linkedin.com/in/muhammadharish"
@@ -621,10 +613,10 @@
                 I aim to build robust real-world robots by integrating:
             </p>
             <ul>
-                <li><strong>SLAM & Autonomous Navigation</strong> (FAST-LIO2, VIO, LiDAR mapping)</li>
+                <li><strong>SLAM & Autonomous Navigation</strong> (LIO, VIO, LiDAR mapping)</li>
                 <li><strong>Robotic Perception</strong> (Deep learning, CV, Object Detection, VLM)</li>
-                <li><strong>Embedded Intelligence</strong> (Jetson, ESP32, PLC, IoT)</li>
-                <li><strong>Motion Planning & Control</strong> (PID, RL, EGO-Planner)</li>
+                <li><strong>Embedded Intelligence</strong> (Jetson, Raspberry Pi, ESP32, PLC)</li>
+                <li><strong>Motion Planning & Control</strong> (PID, RL, Path-Planner)</li>
             </ul>
         </section>
 
@@ -729,6 +721,20 @@
     <script>
         // Project data
         const projects = {
+            skyline: {
+                title: "Skyline X490L Autonomous Mapping Drone",
+                images: ["images/skyline.jpg", "images/skyline-2.jpg", "images/skyline-3.jpg"],
+                description: "Skyline X490L is an autonomous drone platform designed for mapping and localization in harsh and GPS-denied environments such as gold mining sites. The drone features a spherical protective frame, enabling safe flight in indoor or cluttered areas.",
+                details: [
+                    "Jetson Xavier NX for onboard SLAM computation",
+                    "Pixhawk Cube for flight control and stability",
+                    "Livox Mid360 LiDAR for real-time 3D mapping and obstacle detection",
+                    "Implemented real-time LiDAR-based SLAM for autonomous indoor flight"
+                ],
+                technologies: ["NVIDIA Jetson", "Robotics", "ROS", "LiDAR", "SLAM"],
+                status: "2025",
+                award: "Industrial Projects"
+            },
             vlsam_drone: {
                 title: "VLSAM Drone: Vision-LiDAR SLAM for Navigation",
                 images: ["images/vslam-drone.jpg", "images/vslam-drone-2.jpg", "images/vslam-drone-3.jpg"],
@@ -738,27 +744,12 @@
                     "Intel RealSense D435 for visual-inertial odometry (Stereo + Depth)",
                     "VINS-Fusion implementation for robust visual-inertial SLAM",
                     "Custom-designed 3D-printed with 5-inch propellers base frame",
-                    "ROS1 with MAVROS for flight control integration",
-                    "PX4 flight controller with tuned PID for aggressive maneuvers",
+                    "ROS2 with PX4 for flight control integration",
                     "Onboard recording of sensor data for offline analysis and mapping"
                 ],
-                technologies: ["Raspberry Pi 5", "Intel RealSense D435", "ROS1", "VINS-Fusion", "MAVROS", "3D Printing", "PX4", "Computer Vision", "SLAM"],
+                technologies: ["Raspberry Pi 5", "RealSense D435", "ROS2", "VINS-Fusion"],
                 status: "2026",
                 award: "Research Platform"
-            },
-            skyline: {
-                title: "Skyline X490L Autonomous Mapping Drone",
-                images: ["images/skyline.jpg", "images/skyline-2.jpg", "images/skyline-3.jpg"],
-                description: "Skyline X490L is an autonomous drone platform designed for mapping and localization in harsh and GPS-denied environments such as gold mining sites. The drone features a spherical protective frame, enabling safe flight in indoor or cluttered areas.",
-                details: [
-                    "Jetson Xavier for onboard SLAM computation",
-                    "Pixhawk Cube for flight control and stability",
-                    "Livox Mid360 LiDAR for real-time 3D mapping and obstacle detection",
-                    "Implemented real-time LiDAR-based SLAM for autonomous indoor flight"
-                ],
-                technologies: ["NVIDIA Jetson", "Robotics", "ROS", "LiDAR", "SLAM"],
-                status: "2025",
-                award: "Industrial Projects"
             },
             skyrone_v2: {
                 title: "Skyrone V2: Next-Generation Autonomous VTOL Drone",
@@ -804,19 +795,19 @@
                 status: "2024",
                 award: "1st Winner KRTI - VTOL"
             },
-            hydroponic: {
-                title: "IoT Hydroponic Monitoring",
-                images: ["images/hydroponic.jpg", "images/hydroponic-2.jpg", "images/hydroponic-3.jpg"],
-                description: "IoT system for hydroponic parameter monitoring.",
-                details: [
-                    "Real-time pH, EC, temp, humidity monitoring",
-                    "Grafana & Home Assistant integration",
-                    "Data logging & visualization"
-                ],
-                technologies: ["IoT", "Grafana", "PCB", "Embedded", "Arduino"],
-                status: "2024",
-                award: "Self Project"
-            },
+            // hydroponic: {
+            //     title: "IoT Hydroponic Monitoring",
+            //     images: ["images/hydroponic.jpg", "images/hydroponic-2.jpg", "images/hydroponic-3.jpg"],
+            //     description: "IoT system for hydroponic parameter monitoring.",
+            //     details: [
+            //         "Real-time pH, EC, temp, humidity monitoring",
+            //         "Grafana & Home Assistant integration",
+            //         "Data logging & visualization"
+            //     ],
+            //     technologies: ["IoT", "Grafana", "PCB", "Embedded", "Arduino"],
+            //     status: "2024",
+            //     award: "Self Project"
+            // },
             slam: {
                 title: "LiDAR SLAM Mapping",
                 images: ["images/slam.jpg", "images/slam-2.jpg", "images/slam-3.jpg"],
@@ -830,33 +821,33 @@
                 status: "2024",
                 award: ""
             },
-            asrs: {
-                title: "Autonomous ASRS System",
-                images: ["images/asrs.jpg", "images/asrs-2.jpg", "images/asrs-3.jpg"],
-                description: "Semi-autonomous storage & retrieval system for industry.",
-                details: [
-                    "LiDAR obstacle detection",
-                    "Embedded motion control",
-                    "ROS actuator integration"
-                ],
-                technologies: ["LiDAR", "VFD", "Embedded C", "PLC", "ROS"],
-                status: "2024",
-                award: "Industrial Implementation"
-            },
-            loadcell: {
-                title: "Load Cell Conveyor System",
-                images: ["images/loadcell.jpg", "images/loadcell-2.jpg", "images/loadcell-3.jpg"],
-                description: "Industrial weighing & labeling automation.",
-                details: [
-                    "Industrial load cells",
-                    "Arduino data acquisition",
-                    "RS232 printer communication",
-                    "PyQt5 HMI interface"
-                ],
-                technologies: ["Arduino", "Load Cell", "RS232", "PyQt5"],
-                status: "2024",
-                award: ""
-            },
+            // asrs: {
+            //     title: "Autonomous ASRS System",
+            //     images: ["images/asrs.jpg", "images/asrs-2.jpg", "images/asrs-3.jpg"],
+            //     description: "Semi-autonomous storage & retrieval system for industry.",
+            //     details: [
+            //         "LiDAR obstacle detection",
+            //         "Embedded motion control",
+            //         "ROS actuator integration"
+            //     ],
+            //     technologies: ["LiDAR", "VFD", "Embedded C", "PLC", "ROS"],
+            //     status: "2024",
+            //     award: "Industrial Implementation"
+            // },
+            // loadcell: {
+            //     title: "Load Cell Conveyor System",
+            //     images: ["images/loadcell.jpg", "images/loadcell-2.jpg", "images/loadcell-3.jpg"],
+            //     description: "Industrial weighing & labeling automation.",
+            //     details: [
+            //         "Industrial load cells",
+            //         "Arduino data acquisition",
+            //         "RS232 printer communication",
+            //         "PyQt5 HMI interface"
+            //     ],
+            //     technologies: ["Arduino", "Load Cell", "RS232", "PyQt5"],
+            //     status: "2024",
+            //     award: ""
+            // },
             roadsense: {
                 title: "Roadsense: Road Damage Detection System",
                 images: ["images/roadsense-3.jpg", "images/roadsense-2.jpg", "images/roadsense.jpg"],
@@ -871,32 +862,32 @@
                 status: "2024",
                 award: "1st Winner GEMASTIK 2023"
             },
-            iris: {
-                title: "IRIS: Shrimp Larvae Counter",
-                images: ["images/iris-3.jpeg", "images/iris-2.jpg", "images/iris.jpg"],
-                description: "IoT & CV system for automated shrimp counting.",
-                details: [
-                    "OpenCV object detection",
-                    "98% counting accuracy",
-                    "Hours to seconds time reduction"
-                ],
-                technologies: ["Computer Vision", "IoT", "OpenCV", "ESP32"],
-                status: "2023",
-                award: "IPR Granted"
-            },
-            powersense: {
-                title: "PowerSense Energy Monitor",
-                images: ["images/powersense.jpg", "images/powersense-2.jpg", "images/powersense-3.jpg"],
-                description: "IoT-based industrial energy monitoring.",
-                details: [
-                    "Modbus energy meter communication",
-                    "MQTT/HTTP data transmission",
-                    "Remote diagnostics & visualization"
-                ],
-                technologies: ["IoT", "Modbus", "MQTT", "Embedded"],
-                status: "2023",
-                award: ""
-            }
+            // iris: {
+            //     title: "IRIS: Shrimp Larvae Counter",
+            //     images: ["images/iris-3.jpeg", "images/iris-2.jpg", "images/iris.jpg"],
+            //     description: "IoT & CV system for automated shrimp counting.",
+            //     details: [
+            //         "OpenCV object detection",
+            //         "98% counting accuracy",
+            //         "Hours to seconds time reduction"
+            //     ],
+            //     technologies: ["Computer Vision", "IoT", "OpenCV", "ESP32"],
+            //     status: "2023",
+            //     award: "IPR Granted"
+            // },
+            // powersense: {
+            //     title: "PowerSense Energy Monitor",
+            //     images: ["images/powersense.jpg", "images/powersense-2.jpg", "images/powersense-3.jpg"],
+            //     description: "IoT-based industrial energy monitoring.",
+            //     details: [
+            //         "Modbus energy meter communication",
+            //         "MQTT/HTTP data transmission",
+            //         "Remote diagnostics & visualization"
+            //     ],
+            //     technologies: ["IoT", "Modbus", "MQTT", "Embedded"],
+            //     status: "2023",
+            //     award: ""
+            // }
         };
 
         const awards = {
@@ -927,84 +918,55 @@
                 date: "November 2025",
                 organization: "Ministry of Industry & Indonesian Drone Association"
             },
-            outstanding: {
-                title: "Most Outstanding Student - Universitas Pertamina",
-                images: ["images/mapres.jpg", "images/mapres-2.jpg", "images/mapres-3.jpg"],
-                description: "Top student selection from 15 faculties.",
+            krti: {
+                title: "1st Winner - National Flying Robots Competition (KRTI)",
+                images: ["images/krti.jpg", "images/krti-2.jpg", "images/krti-3.jpg"],
+                description: "Ranked 1st in Regional Qualifiers and Top National Finalist in the VTOL Division.",
                 details: [
-                    "GPA 3.96/4.00 (Summa Cum Laude)",
-                    "Leadership & research recognition",
-                    "University-wide award",
-                    "Top graduate of Electrical Engineering Department",
-                    "Top graduate of Faculty of Industrial Technology"
+                    "Served as Team Lead, overseeing the full development cycle of an Autonomous VTOL platform.",
+                    "Architected the navigation stack, integrating Computer Vision for precision landing and target recognition.",
+                    "Managed the integration of PX4 flight dynamics with ROS-based high-level autonomy.",
+                    "Led the team to qualify as a top-tier contender for the National Grand Finals among 100+ universities."
                 ],
                 date: "2024",
-                organization: "Universitas Pertamina"
+                organization: "Ministry of Education (BPTI/Puspresnas)"
             },
             kri: {
-                title: "Kontes Robot Indonesia",
+                title: "2nd Winner - National Robotics Competition (KRI)",
                 images: ["images/kri.jpg", "images/bumblebee-2.jpg", "images/bumblebee-3.jpg"],
-                description: "2nd place Regional Winner - KRSRI Division.",
+                description: "National Finalist and 2nd Winner in the Search and Rescue (KRSRI) Division.",
                 details: [
-                    "National Finalist qualification",
-                    "Hexapod rescue robot design",
-                    "ML-based victim detection",
-                    "Advanced locomotion control system"
+                    "Led a multidisciplinary team to design and build a high-stability Hexapod for disaster response.",
+                    "Directed the development of ML-based victim detection and autonomous path-planning modules.",
+                    "Oversaw the engineering of gait control algorithms for traversing highly irregular terrains.",
+                    "Represented the team as a National Finalist, ranking within the top 5% of participating teams nationwide."
                 ],
                 date: "2024",
-                organization: "Ministry of Education, Culture, Research and Technology"
-            },
-            krti: {
-                title: "Kontes Robot Terbang Indonesia",
-                images: ["images/krti.jpg", "images/krti-2.jpg", "images/krti-3.jpg"],
-                description: "1st place Regional Winner - VTOL Division.",
-                details: [
-                    "National Finalist qualification",
-                    "Autonomous VTOL development",
-                    "Computer vision integration",
-                    "Advanced flight control algorithms"
-                ],
-                date: "2024",
-                organization: "Ministry of Education, Culture, Research and Technology"
+                organization: "Ministry of Education (BPTI/Puspresnas)"
             },
             gemastik: {
                 title: "1st Winner - GEMASTIK 2023",
-                images: ["images/roadsense-4.jpg", "images/roadsense-5.jpg", "images/roadsense-6.jpg"],
+                images: ["images/gemastik.jpg", "images/roadsense-5.jpg", "images/roadsense-6.jpg"],
                 description: "1st place national IT competition.",
                 details: [
+                    "Served as Team Leader for 'RoadSense'—an AI-driven road infrastructure monitoring system.",
                     "300+ competing teams",
-                    "Road damage detection innovation",
                     "Edge computing implementation",
                     "Granted Intellectual Property Rights"
                 ],
                 date: "2023",
                 organization: "Ministry of Education, Culture, Research and Technology"
             },
-            pkm: {
-                title: "Research Funding Recipient",
-                images: ["images/pimnas-2.jpg", "images/pimnas-3.jpg", "images/pimnas-4.jpg"],
-                description: "Multiple funded innovation projects.",
+            outstanding: {
+                title: "1st University Most Outstanding Student",
+                images: ["images/mapres.jpg", "images/mapres-2.jpg", "images/mapres-3.jpg"],
+                description: "Ranked #1 student university-wide across 15 faculties.",
                 details: [
-                    "E-MA: IoT energy monitoring (Rp8.25M)",
-                    "MAP-Road: Road mapping system (Rp8M)",
-                    "PIMNAS 2023 selection",
-                    "University research grant recipient"
+                    "Selected as the top-performing student from a pool of over 3,000 students based on a rigorous evaluation of GPA (3.96/4.00), research, and national competition wins.",
+                    "Recognized for excellence in Scientific Reasoning and Robotic Innovation at the university level."
                 ],
-                date: "2023",
-                organization: "Ministry of Education, Culture, Research and Technology"
-            },
-            ipr: {
-                title: "5 Intellectual Properties",
-                images: ["images/ipr.jpg", "images/ipr-2.jpg", "images/ipr-3.jpg"],
-                description: "Granted IP rights for innovations.",
-                details: [
-                    "Roadsense, IRIS, EMA systems",
-                    "MAP-Road, WeCan-See projects",
-                    "Legal protection granted",
-                    "Commercialization potential recognized"
-                ],
-                date: "2022-2024",
-                organization: "Ministry of Law and Human Rights"
+                date: "2024",
+                organization: "Universitas Pertamina"
             },
             baronas: {
                 title: "1st Winner BARONAS Paper Competition",
@@ -1031,6 +993,34 @@
                 ],
                 date: "2023",
                 organization: "Universitas Negeri Semarang"
+            },
+            ipr: {
+                title: "5 Intellectual Properties (HAKI)",
+                images: ["images/ipr.jpg", "images/ipr-2.jpg", "images/ipr-3.jpg"],
+                description: "Official legal protection granted for proprietary AI and robotic systems.",
+                details: [
+                    "1. RoadSense: Real-time road damage detection system using Deep Learning.",
+                    "2. MAP-Road: Autonomous mapping platform for urban infrastructure.",
+                    "3. IRIS: IoT & Computer Vision system for automated biological counting.",
+                    "4. WeCan-See: AI-assistive technology for visually impaired navigation.",
+                    "5. EMA Systems: Industrial-grade IoT energy monitoring and automation.",
+                    "Granted by the Ministry of Law and Human Rights of Indonesia."
+                ],
+                date: "2022-2024",
+                organization: "Ministry of Law and Human Rights"
+            },
+            pkm: {
+                title: "Research Funding Recipient",
+                images: ["images/pimnas-2.jpg", "images/pimnas-3.jpg", "images/pimnas-4.jpg"],
+                description: "Multiple funded innovation projects.",
+                details: [
+                    "E-MA: IoT energy monitoring (Rp8.25M)",
+                    "MAP-Road: Road mapping system (Rp8M)",
+                    "PIMNAS 2023 selection",
+                    "University research grant recipient"
+                ],
+                date: "2023",
+                organization: "Ministry of Education, Culture, Research and Technology"
             },
             exhibition: {
                 title: "Robotics Exhibition Lead",
